@@ -1,0 +1,2270 @@
+[
+  {
+    "instruction": "Classify the persuasion technique. Return JSON with key technique: ethos, pathos, or logos.",
+    "input": "Studies from Harvard Medical School confirm that this medication reduces symptoms by 60%.",
+    "output": "{\"technique\": \"logos\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'key': 'value', 'number': 42, 'flag': True, 'empty': None}",
+    "output": "{\"key\": \"value\", \"number\": 42, \"flag\": true, \"empty\": null}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {recipe: string, cuisine: string, calories: number, vegetarian: boolean, cook_time_minutes: number}",
+    "input": "Create an entry for a vegetarian Indian curry.",
+    "output": "{\"recipe\": \"Vegetable Korma\", \"cuisine\": \"Indian\", \"calories\": 420, \"vegetarian\": true, \"cook_time_minutes\": 30}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"stats\": {views: 10000, likes: 850, shares: 320, comments: 150,}}",
+    "output": "{\"stats\": {\"views\": 10000, \"likes\": 850, \"shares\": 320, \"comments\": 150}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function highlight_text with parameters: document_id (string), search_terms (array of strings), color (string), case_sensitive (boolean).",
+    "input": "Highlight all occurrences of error and warning in document DOC-55 in yellow with case insensitive matching.",
+    "output": "{\"function\": \"highlight_text\", \"params\": {\"document_id\": \"DOC-55\", \"search_terms\": [\"error\", \"warning\"], \"color\": \"yellow\", \"case_sensitive\": false}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {planet: string, type: string, atmosphere: string, gravity_ms2: number, habitable: boolean}",
+    "input": "Create an entry for Venus.",
+    "output": "{\"planet\": \"Venus\", \"type\": \"Terrestrial\", \"atmosphere\": \"Carbon Dioxide\", \"gravity_ms2\": 8.87, \"habitable\": false}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the politician name, country, and position and return as JSON.",
+    "input": "Angela Merkel served as the Chancellor of Germany for 16 years.",
+    "output": "{\"name\": \"Angela Merkel\", \"country\": \"Germany\", \"position\": \"Chancellor\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function search_flights with parameters: origin (string), destination (string), date (string), passengers (number).",
+    "input": "Find 2 flights from Houston to Chicago on January 20th.",
+    "output": "{\"function\": \"search_flights\", \"params\": {\"origin\": \"Houston\", \"destination\": \"Chicago\", \"date\": \"January 20th\", \"passengers\": 2}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {city: string, country: string, timezone: string, population: number, landmark: string}",
+    "input": "Create an entry for Paris France.",
+    "output": "{\"city\": \"Paris\", \"country\": \"France\", \"timezone\": \"Central European Time\", \"population\": 2148271, \"landmark\": \"Eiffel Tower\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the storytelling element. Return JSON with key element: setting, character, conflict, resolution, or theme.",
+    "input": "The ancient forest with its twisted trees and perpetual fog created an atmosphere of dread.",
+    "output": "{\"element\": \"setting\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'employee': {'id': 'E-007', 'name': 'James Bond', 'dept': 'Security', 'active': True}}",
+    "output": "{\"employee\": {\"id\": \"E-007\", \"name\": \"James Bond\", \"dept\": \"Security\", \"active\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the type of software architecture. Return JSON with key architecture: monolithic, microservices, serverless, or event_driven.",
+    "input": "Each feature is deployed as an independent service with its own database and API.",
+    "output": "{\"architecture\": \"microservices\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the sentiment. Return JSON with key label: positive, negative, or neutral.",
+    "input": "The food was absolutely delicious and the service was outstanding!",
+    "output": "{\"label\": \"positive\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function submit_support_ticket with parameters: user_id (string), category (string), subject (string), description (string), priority (string).",
+    "input": "Submit a high priority technical ticket for user U-789 about the app crashing on login.",
+    "output": "{\"function\": \"submit_support_ticket\", \"params\": {\"user_id\": \"U-789\", \"category\": \"technical\", \"subject\": \"app crashing on login\", \"description\": \"the app crashes when attempting to login\", \"priority\": \"high\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {song: string, artist: string, album: string, duration_seconds: number, released_year: number}",
+    "input": "Create an entry for a pop song released in 2023.",
+    "output": "{\"song\": \"Happy Vibes\", \"artist\": \"Lily Rose\", \"album\": \"Summer Nights\", \"duration_seconds\": 210, \"released_year\": 2023}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {festival: string, country: string, month: string, duration_days: number, type: string}",
+    "input": "Create an entry for a major music festival.",
+    "output": "{\"festival\": \"Tomorrowland\", \"country\": \"Belgium\", \"month\": \"July\", \"duration_days\": 2, \"type\": \"Music Festival\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {country: string, capital: string, population: number, continent: string}",
+    "input": "Create an entry for Japan.",
+    "output": "{\"country\": \"Japan\", \"capital\": \"Tokyo\", \"population\": 127103388, \"continent\": \"Asia\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{garden: {plants: [rose, tulip, sunflower,], area: 50sqm, watered: true}}",
+    "output": "{\"garden\": {\"plants\": [\"rose\", \"tulip\", \"sunflower\"], \"area\": \"50sqm\", \"watered\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {employee_id: string, name: string, department: string, salary: number, is_manager: boolean}",
+    "input": "Create an entry for a software engineer named Alex who earns $95000.",
+    "output": "{\"employee_id\": \"E001\", \"name\": \"Alex\", \"department\": \"Software Engineering\", \"salary\": 95000, \"is_manager\": false}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {stock_symbol: string, company: string, price: number, change_percent: number, market_cap_billion: number}",
+    "input": "Create a stock entry for Apple Inc.",
+    "output": "{\"stock_symbol\": \"AAPL\", \"company\": \"Apple Inc.\", \"price\": 175.56, \"change_percent\": 2.15, \"market_cap_billion\": 2.35}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the text genre. Return JSON with key genre: fiction, non_fiction, poetry, drama, or biography.",
+    "input": "In a galaxy far away, Captain Nova steered her starship through the asteroid belt.",
+    "output": "{\"genre\": \"fiction\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function search_knowledge_base with parameters: query (string), top_k (number), filter_category (string), include_metadata (boolean).",
+    "input": "Search the knowledge base for password reset instructions return top 5 results from the support category with metadata.",
+    "output": "{\"function\": \"search_knowledge_base\", \"params\": {\"query\": \"password reset instructions\", \"top_k\": 5, \"filter_category\": \"support\", \"include_metadata\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the diet type. Return JSON with key diet: vegan, vegetarian, keto, paleo, or omnivore.",
+    "input": "She avoids all meat and dairy but does eat eggs and honey.",
+    "output": "{\"diet\": \"vegetarian\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function rate_limit with parameters: endpoint (string), max_requests (number), window_seconds (number), block_duration_seconds (number).",
+    "input": "Set a rate limit of 100 requests per 60 seconds on the login endpoint with a 300 second block for violators.",
+    "output": "{\"function\": \"rate_limit\", \"params\": {\"endpoint\": \"login\", \"max_requests\": 100, \"window_seconds\": 60, \"block_duration_seconds\": 300}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the patient name, age, and diagnosis and return as JSON.",
+    "input": "Patient John Doe, 45 years old, has been diagnosed with hypertension.",
+    "output": "{\"patientName\": \"John Doe\", \"age\": 45, \"diagnosis\": \"hypertension\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "[{name: 'Alice', age: 25}, {name: 'Bob', age: 30}]",
+    "output": "[{\"name\": \"Alice\", \"age\": 25}, {\"name\": \"Bob\", \"age\": 30}]",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the transportation mode. Return JSON with key mode: air, land, sea, or rail.",
+    "input": "The container ship loaded with cargo departed from the port at dawn.",
+    "output": "{\"mode\": \"sea\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{school: MIT, location: Cambridge, ranking: 1, public: False}",
+    "output": "{\"school\": \"MIT\", \"location\": \"Cambridge\", \"ranking\": 1, \"public\": false}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function transfer_money with parameters: from_account (string), to_account (string), amount (number), currency (string), note (string).",
+    "input": "Transfer $500 USD from account A123 to account B456 for rent payment.",
+    "output": "{\"function\": \"transfer_money\", \"params\": {\"from_account\": \"A123\", \"to_account\": \"B456\", \"amount\": 500, \"currency\": \"USD\", \"note\": \"rent payment\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the superhero name, superpower, and comic publisher and return as JSON.",
+    "input": "Spider-Man has the ability to climb walls and shoot webs and is published by Marvel Comics.",
+    "output": "{\"superhero\": \"Spider-Man\", \"superpower\": [\"climbing walls\", \"shooting webs\"], \"comicPublisher\": \"Marvel Comics\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {pet_name: string, species: string, breed: string, age: number, vaccinated: boolean}",
+    "input": "Create a pet profile for a 3-year-old vaccinated golden retriever named Buddy.",
+    "output": "{\"pet_name\": \"Buddy\", \"species\": \"dog\", \"breed\": \"golden retriever\", \"age\": 3, \"vaccinated\": true}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{network: {ssid: HomeWifi, password: secret123, encrypted: true, band: 5GHz}}",
+    "output": "{\"network\": {\"ssid\": \"HomeWifi\", \"password\": \"secret123\", \"encrypted\": true, \"band\": \"5GHz\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the housing type. Return JSON with key housing: apartment, house, condo, townhouse, or studio.",
+    "input": "The open floor plan combines the living room, dining area, and kitchen into one compact space.",
+    "output": "{\"housing\": \"studio\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{library: {name: pandas, version: 2.0, language: Python, open_source: TRUE,}}",
+    "output": "{\"library\": {\"name\": \"pandas\", \"version\": \"2.0\", \"language\": \"Python\", \"open_source\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the planet name, diameter in km, and atmosphere composition and return as JSON.",
+    "input": "Mars has a diameter of 6,779 km and an atmosphere composed mostly of carbon dioxide.",
+    "output": "{\"planet\": \"Mars\", \"diameter\": 6779, \"atmosphere\": \"carbon dioxide\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {mountain: string, height_m: number, country: string, first_climbed: number, difficulty: string}",
+    "input": "Create an entry for Mount Kilimanjaro.",
+    "output": "{\"mountain\": \"Mount Kilimanjaro\", \"height_m\": 5895, \"country\": \"Tanzania\", \"first_climbed\": 1889, \"difficulty\": \"High\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function set_alarm with parameters: time (string), label (string), repeat (array of strings), sound (string).",
+    "input": "Set an alarm for 7am every Monday and Friday labeled Morning Workout.",
+    "output": "{\"function\": \"set_alarm\", \"params\": {\"time\": \"7:00am\", \"label\": \"Morning Workout\", \"repeat\": [\"Monday\", \"Friday\"], \"sound\": \"default\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {game: string, genre: string, platform: string, release_year: number, developer: string}",
+    "input": "Create an entry for a popular role-playing video game.",
+    "output": "{\"game\": \"The Elder Scrolls V: Skyrim\", \"genre\": \"Role-Playing\", \"platform\": \"PC\", \"release_year\": 2011, \"developer\": \"Bethesda Game Studios\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"permissions\": {read: TRUE, write: FALSE, delete: FALSE, admin: false}}",
+    "output": "{\"permissions\": {\"read\": true, \"write\": false, \"delete\": false, \"admin\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function freeze_account with parameters: account_id (string), reason (string), notify_owner (boolean), review_date (string).",
+    "input": "Freeze account ACC-300 due to fraud suspicion notify the owner and schedule review for next Monday.",
+    "output": "{\"function\": \"freeze_account\", \"params\": {\"account_id\": \"ACC-300\", \"reason\": \"fraud suspicion\", \"notify_owner\": true, \"review_date\": \"next Monday\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {company: string, ceo: string, revenue_billion: number, employees: number, industry: string}",
+    "input": "Create an entry for a major technology company.",
+    "output": "{\"company\": \"Apple Inc.\", \"ceo\": \"Tim Cook\", \"revenue_billion\": 365.33, \"employees\": 154000, \"industry\": \"Technology\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the newspaper name, country, and circulation count and return as JSON.",
+    "input": "The New York Times is an American newspaper with a circulation of about 10 million.",
+    "output": "{\"newspaper\": \"The New York Times\", \"country\": \"USA\", \"circulation\": 10000000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {username: string, email: string, age: number, premium: boolean, interests: array of strings}",
+    "input": "Create a user profile for a 28-year-old premium member interested in hiking and cooking.",
+    "output": "{\"username\": \"OutdoorChef\", \"email\": \"outdoorchef@example.com\", \"age\": 28, \"premium\": true, \"interests\": [\"hiking\", \"cooking\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_survey with parameters: title (string), questions (array of strings), anonymous (boolean), deadline (string).",
+    "input": "Create an anonymous survey titled Employee Satisfaction with 3 questions about work environment pay and management due next Friday.",
+    "output": "{\"function\": \"create_survey\", \"params\": {\"title\": \"Employee Satisfaction\", \"questions\": [\"What is your opinion on the work environment?\", \"Are you satisfied with your pay?\", \"How would you rate the management?\"], \"anonymous\": true, \"deadline\": \"next Friday\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {sport: string, players_per_team: number, equipment: array of strings, olympic: boolean, origin_country: string}",
+    "input": "Create an entry for volleyball.",
+    "output": "{\"sport\": \"Volleyball\", \"players_per_team\": 6, \"equipment\": [\"Ball\", \"Net\"], \"olympic\": true, \"origin_country\": \"United States\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the language name, number of speakers, and primary country and return as JSON.",
+    "input": "Mandarin Chinese is spoken by over 1 billion people primarily in China.",
+    "output": "{\"language\": \"Mandarin Chinese\", \"speakers\": 1000000000, \"primaryCountry\": \"China\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the relationship between cause and effect. Return JSON with key relationship: direct, indirect, or coincidental.",
+    "input": "The city banned plastic bags and ocean plastic waste in the area decreased significantly.",
+    "output": "{\"relationship\": \"direct\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{items: [apple, banana, cherry,], total: 3}",
+    "output": "{\"items\": [\"apple\", \"banana\", \"cherry\"], \"total\": 3}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the investment type. Return JSON with key investment: stocks, bonds, real_estate, crypto, or cash.",
+    "input": "She put 20% of her savings into a 10-year government treasury bond.",
+    "output": "{\"investment\": \"bonds\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the museum name, city, and year founded and return as JSON.",
+    "input": "The Louvre Museum located in Paris was founded in 1793.",
+    "output": "{\"museum_name\": \"The Louvre Museum\", \"city\": \"Paris\", \"year_founded\": 1793}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {article_id: string, headline: string, author: string, published_date: string, tags: array of strings}",
+    "input": "Create a news article entry about climate change.",
+    "output": "{\"article_id\": \"CC12345\", \"headline\": \"Rising Global Temperatures Accelerate Climate Change\", \"author\": \"Emily J. Miller\", \"published_date\": \"2023-02-20\", \"tags\": [\"climate change\", \"global warming\", \"sustainability\", \"environmental issues\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function archive_records with parameters: table (string), older_than_days (number), destination_bucket (string), delete_original (boolean).",
+    "input": "Archive all records from the logs table older than 90 days to the cold-storage bucket and delete originals.",
+    "output": "{\"function\": \"archive_records\", \"params\": {\"table\": \"logs\", \"older_than_days\": 90, \"destination_bucket\": \"cold-storage\", \"delete_original\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function sync_contacts with parameters: source (string), destination (string), overwrite_existing (boolean), filter_group (string).",
+    "input": "Sync contacts from Google to Salesforce overwriting existing records for the VIP group only.",
+    "output": "{\"function\": \"sync_contacts\", \"params\": {\"source\": \"Google\", \"destination\": \"Salesforce\", \"overwrite_existing\": true, \"filter_group\": \"VIP\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {beer: string, country: string, alcohol_percent: number, type: string, founded_year: number}",
+    "input": "Create an entry for Heineken beer.",
+    "output": "{\"beer\": \"Heineken\", \"country\": \"Netherlands\", \"alcohol_percent\": 5, \"type\": \"Lager\", \"founded_year\": 1864}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the emotion. Return JSON with key emotion: joy, sadness, anger, fear, surprise, or neutral.",
+    "input": "I cannot believe they cancelled my favorite show after all these years!",
+    "output": "{\"emotion\": \"sadness\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function search_restaurants with parameters: location (string), cuisine (string), max_distance_km (number), min_rating (number).",
+    "input": "Find Italian restaurants within 5km of downtown Austin with at least 4 star rating.",
+    "output": "{\"function\": \"search_restaurants\", \"params\": {\"location\": \"downtown Austin\", \"cuisine\": \"Italian\", \"max_distance_km\": 5, \"min_rating\": 4}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the type of government. Return JSON with key gov_type: democracy, monarchy, dictatorship, theocracy, or republic.",
+    "input": "Citizens vote every four years to elect their president and members of parliament.",
+    "output": "{\"gov_type\": \"democracy\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {wine: string, region: string, grape_variety: string, vintage_year: number, price_usd: number}",
+    "input": "Create an entry for a French red wine.",
+    "output": "{\"wine\": \"Chateau Margaux\", \"region\": \"Bordeaux\", \"grape_variety\": \"Cabernet Sauvignon\", \"vintage_year\": 2015, \"price_usd\": 250.0}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the medical urgency. Return JSON with key urgency: emergency, urgent, routine, or preventive.",
+    "input": "The patient is experiencing chest pain radiating to the left arm.",
+    "output": "{\"urgency\": \"emergency\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the type of cognitive skill being used. Return JSON with key skill: memory, reasoning, creativity, attention, or language.",
+    "input": "She carefully compared two job offers by weighing pros and cons before making her decision.",
+    "output": "{\"skill\": \"reasoning\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the fashion brand, country of origin, and founding year and return as JSON.",
+    "input": "Gucci was founded in Italy in 1921.",
+    "output": "{\"brand\": \"Gucci\", \"country\": \"Italy\", \"foundingYear\": 1921}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'booking': {'hotel': 'Hilton', 'check_in': '2024-07-01', 'check_out': '2024-07-05', 'paid': True}}",
+    "output": "{\"booking\": {\"hotel\": \"Hilton\", \"check_in\": \"2024-07-01\", \"check_out\": \"2024-07-05\", \"paid\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the car make, model, and year and return as JSON.",
+    "input": "The 2022 Toyota Camry is one of the best-selling sedans in America.",
+    "output": "{\"car\": {\"make\": \"Toyota\", \"model\": \"Camry\", \"year\": 2022}}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the currency name, country, and exchange rate to USD and return as JSON.",
+    "input": "The Euro is used in Germany and currently exchanges at 1.08 USD per Euro.",
+    "output": "{\"currency\": \"Euro\", \"country\": \"Germany\", \"exchangeRate\": 1.08}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the student name, GPA, and major and return as JSON.",
+    "input": "Maria Garcia is a Computer Science major with a 3.9 GPA.",
+    "output": "{\"name\": \"Maria Garcia\", \"GPA\": 3.9, \"major\": \"Computer Science\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {tv_show: string, network: string, seasons: number, genre: string, imdb_rating: number}",
+    "input": "Create an entry for a popular drama series.",
+    "output": "{\"tv_show\": \"Breaking Bad\", \"network\": \"AMC\", \"seasons\": 5, \"genre\": \"Drama\", \"imdb_rating\": 9.5}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {disease: string, type: string, affected_organ: string, contagious: boolean, treatment: string}",
+    "input": "Create an entry for Type 2 Diabetes.",
+    "output": "{\"disease\": \"Type 2 Diabetes\", \"type\": \"Metabolic Disorder\", \"affected_organ\": \"Pancreas\", \"contagious\": false, \"treatment\": \"Medication and Lifestyle Changes\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the feedback type. Return JSON with key feedback_type: positive, constructive, negative, or neutral.",
+    "input": "Your presentation was well-structured but could benefit from more visual examples.",
+    "output": "{\"feedback_type\": \"constructive\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{pets: [{name: Max, type: dog}, {name: Whiskers, type: 'cat'}]}",
+    "output": "{\"pets\": [{\"name\": \"Max\", \"type\": \"dog\"}, {\"name\": \"Whiskers\", \"type\": \"cat\"}]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'session': {'user': 'alice', 'token': 'abc123', 'expires': '2024-12-31', 'active': True}}",
+    "output": "{\"session\": {\"user\": \"alice\", \"token\": \"abc123\", \"expires\": \"2024-12-31\", \"active\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the hospital name, city, and number of beds and return as JSON.",
+    "input": "Massachusetts General Hospital in Boston has over 1,000 patient beds.",
+    "output": "{\"hospitalName\": \"Massachusetts General Hospital\", \"city\": \"Boston\", \"numberOfBeds\": 1000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function run_sql_query with parameters: database (string), query (string), limit (number).",
+    "input": "Get the top 10 rows from the users table in the production database.",
+    "output": "{\"function\": \"run_sql_query\", \"params\": {\"database\": \"production\", \"query\": \"SELECT * FROM users\", \"limit\": 10}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the time of day described. Return JSON with key time_of_day: morning, afternoon, evening, or night.",
+    "input": "The sun had just set and the first stars were beginning to appear in the sky.",
+    "output": "{\"time_of_day\": \"evening\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the fashion style. Return JSON with key style: casual, formal, streetwear, bohemian, or sporty.",
+    "input": "Oversized hoodies paired with cargo pants and chunky sneakers define this urban look.",
+    "output": "{\"style\": \"streetwear\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function auto_reply with parameters: message_id (string), tone (string), include_signature (boolean), language (string).",
+    "input": "Auto reply to message MSG-300 in a professional tone with signature in English.",
+    "output": "{\"function\": \"auto_reply\", \"params\": {\"message_id\": \"MSG-300\", \"tone\": \"professional\", \"include_signature\": true, \"language\": \"English\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function get_weather with parameters: city (string), country (string), units (string).",
+    "input": "What is the weather like in Paris France in celsius?",
+    "output": "{\"function\": \"get_weather\", \"params\": {\"city\": \"Paris\", \"country\": \"France\", \"units\": \"celsius\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function enrich_data with parameters: record_id (string), data_source (string), fields_to_enrich (array of strings), overwrite (boolean).",
+    "input": "Enrich record REC-55 from Clearbit adding company size and industry fields without overwriting existing data.",
+    "output": "{\"function\": \"enrich_data\", \"params\": {\"record_id\": \"REC-55\", \"data_source\": \"Clearbit\", \"fields_to_enrich\": [\"company size\", \"industry\"], \"overwrite\": false}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the type of natural disaster. Return JSON with key disaster: earthquake, flood, hurricane, drought, or wildfire.",
+    "input": "Months without rain have turned the fields brown and livestock are dying from lack of water.",
+    "output": "{\"disaster\": \"drought\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"metadata\": {created: 2024-01-01, updated: 2024-06-15, version: 3}}",
+    "output": "{\"metadata\": {\"created\": \"2024-01-01\", \"updated\": \"2024-06-15\", \"version\": 3}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'stock': {'symbol': 'TSLA', 'price': 250.50, 'change': +3.2, 'market': 'NASDAQ'}}",
+    "output": "{\"stock\": {\"symbol\": \"TSLA\", \"price\": 250.50, \"change\": 3.2, \"market\": \"NASDAQ\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the cuisine. Return JSON with key cuisine: italian, mexican, chinese, indian, american, or other.",
+    "input": "Spicy chicken tikka masala served with naan bread and basmati rice.",
+    "output": "{\"cuisine\": \"indian\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'interview': {'candidate': 'Alex', 'position': 'ML Engineer', 'passed': True, 'score': 92}}",
+    "output": "{\"interview\": {\"candidate\": \"Alex\", \"position\": \"ML Engineer\", \"passed\": true, \"score\": 92}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function optimize_image with parameters: image_url (string), quality (number), max_size_kb (number), preserve_metadata (boolean).",
+    "input": "Optimize the image at https://cdn.site.com/banner.png to 80% quality under 200KB preserving metadata.",
+    "output": "{\"function\": \"optimize_image\", \"params\": {\"image_url\": \"https://cdn.site.com/banner.png\", \"quality\": 80, \"max_size_kb\": 200, \"preserve_metadata\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function generate_report with parameters: report_type (string), start_date (string), end_date (string), format (string), email_to (string).",
+    "input": "Generate a monthly sales report for Q1 2024 in PDF format and email it to manager@company.com.",
+    "output": "{\"function\": \"generate_report\", \"params\": {\"report_type\": \"monthly sales\", \"start_date\": \"2024-01-01\", \"end_date\": \"2024-03-31\", \"format\": \"PDF\", \"email_to\": \"manager@company.com\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {athlete: string, sport: string, country: string, medals: number, olympic_year: number}",
+    "input": "Create an entry for a swimming gold medalist.",
+    "output": "{\"athlete\": \"Katie Ledecky\", \"sport\": \"Swimming\", \"country\": \"USA\", \"medals\": 5, \"olympic_year\": 2020}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {planet: string, diameter_km: number, moons: number, has_rings: boolean, distance_from_sun_million_km: number}",
+    "input": "Create an entry for Saturn.",
+    "output": "{\"planet\": \"Saturn\", \"diameter_km\": 116460, \"moons\": 62, \"has_rings\": true, \"distance_from_sun_million_km\": 1.43}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the disease name, affected organ, and common treatment and return as JSON.",
+    "input": "Pneumonia affects the lungs and is commonly treated with antibiotics.",
+    "output": "{\"disease\": \"Pneumonia\", \"affected_organ\": \"lungs\", \"common_treatment\": \"antibiotics\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the telescope name, type, and aperture in meters and return as JSON.",
+    "input": "The James Webb Space Telescope is an infrared telescope with a 6.5 meter mirror.",
+    "output": "{\"telescope_name\": \"James Webb Space Telescope\", \"type\": \"infrared telescope\", \"aperture\": 6.5}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {sea: string, connected_ocean: string, area_km2: number, avg_depth_m: number, bordering_countries: array of strings}",
+    "input": "Create an entry for the Mediterranean Sea.",
+    "output": "{\"sea\": \"Mediterranean Sea\", \"connected_ocean\": \"Atlantic Ocean\", \"area_km2\": 2500000, \"avg_depth_m\": 1500, \"bordering_countries\": [\"Spain\", \"France\", \"Italy\", \"Greece\", \"Turkey\", \"Egypt\", \"Israel\", \"Lebanon\", \"Syria\", \"Tunisia\", \"Algeria\", \"Morocco\", \"Libya\", \"Cyprus\", \"Croatia\", \"Bosnia and Herzegovina\", \"Montenegro\", \"Albania\", \"Monaco\", \"Slovenia\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the architect name, building designed, and year completed and return as JSON.",
+    "input": "Frank Lloyd Wright designed Fallingwater which was completed in 1939.",
+    "output": "{\"architect\": \"Frank Lloyd Wright\", \"building\": \"Fallingwater\", \"yearCompleted\": 1939}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {title: string, author: string, year: number, genre: string, rating: number}",
+    "input": "Create a book entry for a science fiction novel.",
+    "output": "{\"title\": \"Galactic Odyssey\", \"author\": \"Ava Morales\", \"year\": 2022, \"genre\": \"Science Fiction\", \"rating\": 4.5}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the hotel name, star rating, and price per night and return as JSON.",
+    "input": "The Ritz Carlton is a 5-star hotel with rooms starting at $500 per night.",
+    "output": "{\"hotelName\": \"The Ritz Carlton\", \"starRating\": 5, \"pricePerNight\": 500}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the writing style. Return JSON with key style: academic, journalistic, creative, technical, or conversational.",
+    "input": "The findings suggest a statistically significant correlation between sleep duration and cognitive performance.",
+    "output": "{\"style\": \"academic\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {city_transit: string, city: string, lines: number, daily_riders_million: number, opened_year: number}",
+    "input": "Create an entry for the Tokyo Metro.",
+    "output": "{\"city_transit\": \"Tokyo Metro\", \"city\": \"Tokyo\", \"lines\": 9, \"daily_riders_million\": 6.84, \"opened_year\": 1927}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the animal class. Return JSON with key class: mammal, bird, reptile, amphibian, or fish.",
+    "input": "This cold-blooded creature lays eggs on land but spends most of its life in water.",
+    "output": "{\"class\": \"amphibian\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the mountain name, height in meters, and continent and return as JSON.",
+    "input": "Mount Everest stands 8,849 meters tall and is located in Asia.",
+    "output": "{\"mountain\": \"Mount Everest\", \"height\": 8849, \"continent\": \"Asia\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'review': {'product': 'Headphones', 'rating': 4, 'verified': True, 'comment': 'Great sound'}}",
+    "output": "{\"review\": {\"product\": \"Headphones\", \"rating\": 4, \"verified\": true, \"comment\": \"Great sound\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the difficulty. Return JSON with key level: easy, medium, or hard.",
+    "input": "Given a sorted array, implement binary search to find a target element.",
+    "output": "{\"level\": \"medium\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the conflict type. Return JSON with key conflict: interpersonal, internal, societal, or environmental.",
+    "input": "The city council debated whether to allow new construction in the protected wetlands area.",
+    "output": "{\"conflict\": \"societal\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{address: {street: 123 Main St, city: Austin, zip: 78701}}",
+    "output": "{\"address\": {\"street\": \"123 Main St\", \"city\": \"Austin\", \"zip\": \"78701\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract all email addresses and associated names from the text as a JSON array.",
+    "input": "Contact Alice at alice@example.com or Bob at bob@work.org for information.",
+    "output": "[\n  {\n    \"name\": \"Alice\",\n    \"email\": \"alice@example.com\"\n  },\n  {\n    \"name\": \"Bob\",\n    \"email\": \"bob@work.org\"\n  }\n]",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {dance: string, origin_country: string, music_style: string, partner_dance: boolean, famous_dancer: string}",
+    "input": "Create an entry for the Tango.",
+    "output": "{\"dance\": \"Tango\", \"origin_country\": \"Argentina\", \"music_style\": \"Tango music\", \"partner_dance\": true, \"famous_dancer\": \"Rudolf Valentino\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the parenting style. Return JSON with key style: authoritative, authoritarian, permissive, or uninvolved.",
+    "input": "The parents set clear rules but always explained the reasons and listened to their childs point of view.",
+    "output": "{\"style\": \"authoritative\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the social issue. Return JSON with key issue: inequality, discrimination, poverty, healthcare, or education.",
+    "input": "Families in rural areas often travel hours to reach the nearest hospital or clinic.",
+    "output": "{\"issue\": \"healthcare\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {camera: string, brand: string, sensor_type: string, megapixels: number, price_usd: number}",
+    "input": "Create an entry for a professional mirrorless camera.",
+    "output": "{\"camera\": \"Alpha a7R IV\", \"brand\": \"Sony\", \"sensor_type\": \"Full Frame CMOS\", \"megapixels\": 61.4, \"price_usd\": 3499.99}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function send_notification with parameters: user_ids (array of strings), message (string), channel (string), urgent (boolean).",
+    "input": "Send an urgent push notification to users U-1 U-2 and U-3 saying System maintenance in 30 minutes.",
+    "output": "{\"function\": \"send_notification\", \"params\": {\"user_ids\": [\"U-1\", \"U-2\", \"U-3\"], \"message\": \"System maintenance in 30 minutes\", \"channel\": \"push\", \"urgent\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function send_sms with parameters: phone_number (string), message (string), schedule_time (string).",
+    "input": "Send a reminder SMS to 555-9876 saying Your appointment is tomorrow at 2pm scheduled for 8am today.",
+    "output": "{\"function\": \"send_sms\", \"params\": {\"phone_number\": \"555-9876\", \"message\": \"Your appointment is tomorrow at 2pm\", \"schedule_time\": \"2024-03-16T08:00:00\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the river name, length in km, and continent and return as JSON.",
+    "input": "The Amazon River stretching 6,400 km flows through South America.",
+    "output": "{\"river_name\": \"Amazon River\", \"length_km\": 6400, \"continent\": \"South America\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the volcano name, country, and last eruption year and return as JSON.",
+    "input": "Mount Etna located in Italy last erupted in 2023.",
+    "output": "{\"volcano\": \"Mount Etna\", \"country\": \"Italy\", \"lastEruptionYear\": 2023}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {ngo: string, mission: string, founded_year: number, headquarters: string, annual_budget_million: number}",
+    "input": "Create an entry for a global environmental NGO.",
+    "output": "{\"ngo\": \"Green Earth Alliance\", \"mission\": \"To protect and preserve the natural world for future generations\", \"founded_year\": 1995, \"headquarters\": \"New York City\", \"annual_budget_million\": 50}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the drug name, dosage, and frequency and return as JSON.",
+    "input": "Take Ibuprofen 400mg twice daily with food.",
+    "output": "{\"drugName\": \"Ibuprofen\", \"dosage\": \"400mg\", \"frequency\": \"twice daily\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"person\": {name: John Smith, dob: 1990-05-15, active: true}}",
+    "output": "{\"person\": {\"name\": \"John Smith\", \"dob\": \"1990-05-15\", \"active\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the chemical element, symbol, and atomic number and return as JSON.",
+    "input": "Gold has the chemical symbol Au and an atomic number of 79.",
+    "output": "{\"element\": \"Gold\", \"symbol\": \"Au\", \"atomicNumber\": 79}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {scientist: string, field: string, discovery: string, year: number, nationality: string}",
+    "input": "Create an entry for a famous physicist.",
+    "output": "{\"scientist\": \"Marie Curie\", \"field\": \"Physics\", \"discovery\": \"Radioactivity\", \"year\": 1898, \"nationality\": \"Polish\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the technical issue type. Return JSON with key issue: hardware, software, network, security, or user_error.",
+    "input": "The application crashes every time the user tries to export a file larger than 100MB.",
+    "output": "{\"issue\": \"software\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the mineral name, hardness on Mohs scale, and common use and return as JSON.",
+    "input": "Diamond has a hardness of 10 on the Mohs scale and is commonly used in jewelry.",
+    "output": "{\"mineral\": \"Diamond\", \"hardness\": 10, \"common_use\": \"jewelry\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the type of test. Return JSON with key test_type: unit, integration, system, or acceptance.",
+    "input": "We verified that the payment module correctly communicates with the inventory and shipping services.",
+    "output": "{\"test_type\": \"integration\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the learning style addressed. Return JSON with key style: visual, auditory, reading, or kinesthetic.",
+    "input": "Watch this step-by-step video tutorial to understand the concept better.",
+    "output": "{\"style\": \"visual\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function recommend_products with parameters: user_id (string), category (string), limit (number), exclude_purchased (boolean).",
+    "input": "Recommend up to 5 electronics products for user U-888 excluding items they already purchased.",
+    "output": "{\"function\": \"recommend_products\", \"params\": {\"user_id\": \"U-888\", \"category\": \"electronics\", \"limit\": 5, \"exclude_purchased\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function compare_prices with parameters: product_name (string), stores (array of strings), include_shipping (boolean), currency (string).",
+    "input": "Compare prices for iPhone 15 across Amazon BestBuy and Walmart including shipping in USD.",
+    "output": "{\"function\": \"compare_prices\", \"params\": {\"product_name\": \"iPhone 15\", \"stores\": [\"Amazon\", \"BestBuy\", \"Walmart\"], \"include_shipping\": true, \"currency\": \"USD\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function schedule_post with parameters: platform (string), content (string), media_url (string), post_time (string).",
+    "input": "Schedule a post on Instagram with the caption Summer vibes with image at https://img.com/beach.jpg for 6pm today.",
+    "output": "{\"function\": \"schedule_post\", \"params\": {\"platform\": \"Instagram\", \"content\": \"Summer vibes\", \"media_url\": \"https://img.com/beach.jpg\", \"post_time\": \"6pm today\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function send_bulk_email with parameters: template_id (string), recipient_list_id (string), personalize (boolean), send_time (string).",
+    "input": "Send personalized emails using template T-10 to recipient list L-5 scheduled for tomorrow at 9am.",
+    "output": "{\"function\": \"send_bulk_email\", \"params\": {\"template_id\": \"T-10\", \"recipient_list_id\": \"L-5\", \"personalize\": true, \"send_time\": \"tomorrow at 9am\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the news anchor name, network, and years on air and return as JSON.",
+    "input": "Anderson Cooper has been a news anchor at CNN for over 20 years.",
+    "output": "{\"name\": \"Anderson Cooper\", \"network\": \"CNN\", \"yearsOnAir\": 20}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"athlete\": {name: Serena Williams, sport: tennis, titles: 23, retired: TRUE}}",
+    "output": "{\"athlete\": {\"name\": \"Serena Williams\", \"sport\": \"tennis\", \"titles\": 23, \"retired\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Is this email spam? Return JSON with keys label (spam or not_spam) and confidence (high, medium, or low).",
+    "input": "Congratulations! You have won a $1,000,000 lottery prize. Click here to claim now!",
+    "output": "{\"label\": \"spam\", \"confidence\": \"high\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the software name, version, and release date and return as JSON.",
+    "input": "Python 3.12 was officially released on October 2, 2023.",
+    "output": "{\"software\": \"Python\", \"version\": \"3.12\", \"releaseDate\": \"October 2, 2023\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the instrument name, music family, and country of origin and return as JSON.",
+    "input": "The sitar belongs to the string family and originated in India.",
+    "output": "{\"instrument\": \"sitar\", \"music_family\": \"string\", \"country_of_origin\": \"India\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{invoice_id: INV-001, amount: $500.00, paid: yes}",
+    "output": "{\"invoice_id\": \"INV-001\", \"amount\": \"$500.00\", \"paid\": \"yes\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the type of memory described. Return JSON with key memory_type: short_term, long_term, procedural, or episodic.",
+    "input": "She still vividly remembers the exact moment she heard the news on that rainy Tuesday in 2005.",
+    "output": "{\"memory_type\": \"episodic\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the bridge name, location, and length in meters and return as JSON.",
+    "input": "The Golden Gate Bridge located in San Francisco is 2,737 meters long.",
+    "output": "{\"bridge_name\": \"Golden Gate Bridge\", \"location\": \"San Francisco\", \"length_in_meters\": 2737}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function backup_database with parameters: database_name (string), storage_location (string), compression (boolean), encryption_key (string).",
+    "input": "Backup the production database to S3 with compression enabled and encrypt it with key KEY-2024.",
+    "output": "{\"function\": \"backup_database\", \"params\": {\"database_name\": \"production\", \"storage_location\": \"S3\", \"compression\": true, \"encryption_key\": \"KEY-2024\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"log\": [{level: INFO, msg: Started}, {level: ERROR, msg: Failed}]}",
+    "output": "{\"log\": [{\"level\": \"INFO\", \"msg\": \"Started\"}, {\"level\": \"ERROR\", \"msg\": \"Failed\"}]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the conflict resolution style. Return JSON with key style: collaborative, competitive, avoidant, accommodating, or compromising.",
+    "input": "Instead of arguing, both teams agreed to split the budget equally and move forward.",
+    "output": "{\"style\": \"compromising\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the national park name, country, and area in square km and return as JSON.",
+    "input": "Yellowstone National Park located in the USA covers 8,991 square kilometers.",
+    "output": "{\"national_park\": \"Yellowstone National Park\", \"country\": \"USA\", \"area_sq_km\": 8991}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function parse_resume with parameters: file_url (string), extract_fields (array of strings), output_format (string).",
+    "input": "Parse the resume at https://careers.com/cv.pdf and extract name email skills and experience as JSON.",
+    "output": "{\"function\": \"parse_resume\", \"params\": {\"file_url\": \"https://careers.com/cv.pdf\", \"extract_fields\": [\"name\", \"email\", \"skills\", \"experience\"], \"output_format\": \"json\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function check_availability with parameters: resource_type (string), resource_id (string), start_time (string), end_time (string).",
+    "input": "Check if conference room CR-3 is available from 2pm to 4pm today.",
+    "output": "{\"function\": \"check_availability\", \"params\": {\"resource_type\": \"conference room\", \"resource_id\": \"CR-3\", \"start_time\": \"2024-03-16T14:00:00\", \"end_time\": \"2024-03-16T16:00:00\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {law: string, country: string, enacted_year: number, purpose: string, penalty: string}",
+    "input": "Create an entry for a traffic law.",
+    "output": "{\"law\": \"Speed Limit\", \"country\": \"United States\", \"enacted_year\": 1974, \"purpose\": \"To reduce traffic accidents and fatalities\", \"penalty\": \"Fines and license suspension\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the job sector. Return JSON with key sector: public, private, nonprofit, or self_employed.",
+    "input": "She runs her own freelance graphic design business from home.",
+    "output": "{\"sector\": \"self_employed\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the crisis type. Return JSON with key crisis: natural_disaster, economic, political, health, or social.",
+    "input": "A 7.8 magnitude earthquake struck the coastal city causing widespread destruction.",
+    "output": "{\"crisis\": \"natural_disaster\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {team: string, city: string, sport: string, wins: number, losses: number}",
+    "input": "Create an entry for a basketball team from Chicago with 45 wins.",
+    "output": "{\"team\": \"Bulls\", \"city\": \"Chicago\", \"sport\": \"basketball\", \"wins\": 45, \"losses\": 0}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {app_name: string, version: string, platform: string, size_mb: number, free: boolean}",
+    "input": "Create an entry for a free iOS photo editing app.",
+    "output": "{\"app_name\": \"PhotoEditor\", \"version\": \"1.2.3\", \"platform\": \"iOS\", \"size_mb\": 25.6, \"free\": true}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the exam name, passing score, and administering organization and return as JSON.",
+    "input": "The TOEFL requires a minimum score of 80 and is administered by ETS.",
+    "output": "{\"exam_name\": \"TOEFL\", \"passing_score\": 80, \"administering_organization\": \"ETS\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the marketing channel. Return JSON with key channel: social_media, email, search, tv, or print.",
+    "input": "We sent a personalized campaign to 50,000 subscribers with a 35% open rate.",
+    "output": "{\"channel\": \"email\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_workflow with parameters: name (string), steps (array of strings), trigger (string), notify_on_complete (boolean).",
+    "input": "Create a workflow called Onboarding Flow with steps send_welcome_email create_account assign_team triggered on user_signup with completion notification.",
+    "output": "{\"function\": \"create_workflow\", \"params\": {\"name\": \"Onboarding Flow\", \"steps\": [\"send_welcome_email\", \"create_account\", \"assign_team\"], \"trigger\": \"user_signup\", \"notify_on_complete\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {insect: string, order: string, lifespan_days: number, venomous: boolean, habitat: string}",
+    "input": "Create an entry for a honey bee.",
+    "output": "{\"insect\": \"Honey Bee\", \"order\": \"Hymenoptera\", \"lifespan_days\": 56, \"venomous\": true, \"habitat\": \"Temperate forests and grasslands\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{order: {id: 555, items: [book, pen], total: $24.99}}",
+    "output": "{\"order\": {\"id\": 555, \"items\": [\"book\", \"pen\"], \"total\": 24.99}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"audit\": {action: login, user: admin, ip: 192.168.1.1, success: true}}",
+    "output": "{\"audit\": {\"action\": \"login\", \"user\": \"admin\", \"ip\": \"192.168.1.1\", \"success\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function classify_document with parameters: document_id (string), model (string), categories (array of strings), confidence_min (number).",
+    "input": "Classify document D-77 using model doc-classifier-v3 into categories invoice receipt or contract with minimum confidence 0.9.",
+    "output": "{\"function\": \"classify_document\", \"params\": {\"document_id\": \"D-77\", \"model\": \"doc-classifier-v3\", \"categories\": [\"invoice\", \"receipt\", \"contract\"], \"confidence_min\": 0.9}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'map': {'center': {'lat': 40.7128, 'lng': -74.0060}, 'zoom': 12, 'type': 'roadmap'}}",
+    "output": "{\"map\": {\"center\": {\"lat\": 40.7128, \"lng\": -74.0060}, \"zoom\": 12, \"type\": \"roadmap\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"plant\": {name: Cactus, type: succulent, watering: weekly, sunlight: full}}",
+    "output": "{\"plant\": {\"name\": \"Cactus\", \"type\": \"succulent\", \"watering\": \"weekly\", \"sunlight\": \"full\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"weather\": {city: Tokyo, temp: 22, unit: celsius, raining: false,}}",
+    "output": "{\"weather\": {\"city\": \"Tokyo\", \"temp\": 22, \"unit\": \"celsius\", \"raining\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {transaction_id: string, amount: number, currency: string, status: string, timestamp: string}",
+    "input": "Create a payment transaction entry for $250 USD.",
+    "output": "{\"transaction_id\": \"TXN123456789\", \"amount\": 250.0, \"currency\": \"USD\", \"status\": \"pending\", \"timestamp\": \"2024-07-26T14:30:00.000Z\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function summarize_document with parameters: document_url (string), max_words (number), language (string), bullet_points (boolean).",
+    "input": "Summarize the document at https://docs.com/report.pdf in under 200 words in English using bullet points.",
+    "output": "{\"function\": \"summarize_document\", \"params\": {\"document_url\": \"https://docs.com/report.pdf\", \"max_words\": 200, \"language\": \"English\", \"bullet_points\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the train route, operator, and journey time and return as JSON.",
+    "input": "The Eurostar operated by Eurostar International travels from London to Paris in 2 hours 15 minutes.",
+    "output": "{\"trainRoute\": \"London to Paris\", \"operator\": \"Eurostar International\", \"journeyTime\": \"2 hours 15 minutes\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {political_party: string, country: string, founded_year: number, ideology: string, current_leader: string}",
+    "input": "Create an entry for a major US political party.",
+    "output": "{\"political_party\": \"Democratic Party\", \"country\": \"United States\", \"founded_year\": 1828, \"ideology\": \"Liberalism\", \"current_leader\": \"Joe Biden\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {drug: string, condition: string, dosage_mg: number, prescription_required: boolean, manufacturer: string}",
+    "input": "Create an entry for a common pain relief medication.",
+    "output": "{\"drug\": \"Ibuprofen\", \"condition\": \"Pain relief\", \"dosage_mg\": 200, \"prescription_required\": false, \"manufacturer\": \"Johnson & Johnson\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function track_shipment with parameters: tracking_number (string), carrier (string), notify_on_update (boolean), contact_email (string).",
+    "input": "Track shipment 1Z999AA10123456784 with UPS and notify updates to customer@email.com.",
+    "output": "{\"function\": \"track_shipment\", \"params\": {\"tracking_number\": \"1Z999AA10123456784\", \"carrier\": \"UPS\", \"notify_on_update\": true, \"contact_email\": \"customer@email.com\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the physical state of matter. Return JSON with key state: solid, liquid, gas, or plasma.",
+    "input": "At room temperature this substance flows freely and takes the shape of its container.",
+    "output": "{\"state\": \"liquid\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {event: string, date: string, location: string, attendees: number, virtual: boolean}",
+    "input": "Create an entry for an online conference.",
+    "output": "{\"event\": \"Online Conference\", \"date\": \"2024-03-15\", \"location\": \"Virtual\", \"attendees\": 500, \"virtual\": true}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"model\": {name: GPT-4, params: 1T, context: 128k, multimodal: TRUE}}",
+    "output": "{\"model\": {\"name\": \"GPT-4\", \"params\": \"1T\", \"context\": \"128k\", \"multimodal\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the company name, stock symbol, and headquarters city and return as JSON.",
+    "input": "Apple Inc trades under the symbol AAPL and is headquartered in Cupertino California.",
+    "output": "{\"companyName\": \"Apple Inc\", \"stockSymbol\": \"AAPL\", \"headquartersCity\": \"Cupertino\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function merge_documents with parameters: document_ids (array of strings), output_name (string), format (string), preserve_formatting (boolean).",
+    "input": "Merge documents DOC-1 DOC-2 and DOC-3 into a single PDF called final_report preserving formatting.",
+    "output": "{\"function\": \"merge_documents\", \"params\": {\"document_ids\": [\"DOC-1\", \"DOC-2\", \"DOC-3\"], \"output_name\": \"final_report\", \"format\": \"PDF\", \"preserve_formatting\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the building name, height in meters, and city and return as JSON.",
+    "input": "The Burj Khalifa standing 828 meters tall is located in Dubai.",
+    "output": "{\"building\": \"Burj Khalifa\", \"height\": 828, \"city\": \"Dubai\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'name': 'Carlos', 'hobbies': ['reading', 'coding', 'hiking'], 'age': 32}",
+    "output": "{\"name\": \"Carlos\", \"hobbies\": [\"reading\", \"coding\", \"hiking\"], \"age\": 32}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'sports': ['soccer', 'basketball', 'tennis',], 'favorite': 'soccer'}",
+    "output": "{\"sports\": [\"soccer\", \"basketball\", \"tennis\"], \"favorite\": \"soccer\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the relationship status implied. Return JSON with key status: single, dating, married, divorced, or widowed.",
+    "input": "After 20 years together they decided to go their separate ways and file the paperwork.",
+    "output": "{\"status\": \"divorced\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function generate_qr_code with parameters: content (string), size_px (number), format (string), include_logo (boolean).",
+    "input": "Generate a 300px PNG QR code for the URL https://mysite.com without a logo.",
+    "output": "{\"function\": \"generate_qr_code\", \"params\": {\"content\": \"https://mysite.com\", \"size_px\": 300, \"format\": \"png\", \"include_logo\": false}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the meal type. Return JSON with key meal: breakfast, lunch, dinner, snack, or dessert.",
+    "input": "A warm bowl of oatmeal topped with fresh berries and honey.",
+    "output": "{\"meal\": \"breakfast\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the property address, price, and number of bedrooms and return as JSON.",
+    "input": "The house at 456 Oak Street is listed for $450,000 and has 4 bedrooms.",
+    "output": "{\"address\": \"456 Oak Street\", \"price\": 450000, \"bedrooms\": 4}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {ocean: string, area_million_km2: number, avg_depth_m: number, deepest_point: string, bordered_continents: array of strings}",
+    "input": "Create an entry for the Atlantic Ocean.",
+    "output": "{\"ocean\": \"Atlantic Ocean\", \"area_million_km2\": 85.133, \"avg_depth_m\": 3646, \"deepest_point\": \"Puerto Rico Trench\", \"bordered_continents\": [\"North America\", \"South America\", \"Europe\", \"Africa\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"data\": [{x: 1, y: 2}, {x: 3, y: 4}, {x: 5, y: 6}]}",
+    "output": "{\"data\": [{\"x\": 1, \"y\": 2}, {\"x\": 3, \"y\": 4}, {\"x\": 5, \"y\": 6}]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_calendar_event with parameters: title (string), date (string), time (string), duration_minutes (number), attendees (array).",
+    "input": "Schedule a 1-hour team standup tomorrow at 9am with alice and bob.",
+    "output": "{\"function\": \"create_calendar_event\", \"params\": {\"title\": \"Team Standup\", \"date\": \"tomorrow\", \"time\": \"9:00am\", \"duration_minutes\": 60, \"attendees\": [\"alice\", \"bob\"]}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the user intent. Return JSON with key intent: question, complaint, compliment, request, or other.",
+    "input": "Could you please help me reset my password as soon as possible?",
+    "output": "{\"intent\": \"request\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the vaccine name, disease it prevents, and manufacturer and return as JSON.",
+    "input": "Pfizer-BioNTech COVID-19 vaccine prevents COVID-19 and is manufactured by Pfizer.",
+    "output": "{\"vaccine_name\": \"Pfizer-BioNTech COVID-19 vaccine\", \"disease_prevented\": \"COVID-19\", \"manufacturer\": \"Pfizer\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the sentiment of this product review. Return JSON with key label: positive, negative, or neutral.",
+    "input": "The battery life is okay but the screen quality is disappointing for the price.",
+    "output": "{\"label\": \"negative\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the event name, date, and ticket price and return as JSON.",
+    "input": "The Jazz Festival on July 4th has tickets available for $45 per person.",
+    "output": "{\"eventName\": \"The Jazz Festival\", \"date\": \"July 4th\", \"ticketPrice\": 45}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the language. Return JSON with key language: english, spanish, french, german, or other.",
+    "input": "Bonjour, comment allez-vous aujourd hui?",
+    "output": "{\"language\": \"french\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {language: string, family: string, speakers_million: number, official_countries: array of strings}",
+    "input": "Create an entry for Spanish.",
+    "output": "{\"language\": \"Spanish\", \"family\": \"Romance\", \"speakers_million\": 460, \"official_countries\": [\"Spain\", \"Mexico\", \"Argentina\", \"Colombia\", \"Peru\", \"Venezuela\", \"Chile\", \"Ecuador\", \"Guatemala\", \"Cuba\", \"Dominican Republic\", \"Bolivia\", \"Honduras\", \"Paraguay\", \"El Salvador\", \"Nicaragua\", \"Costa Rica\", \"Panama\", \"Uruguay\", \"Equatorial Guinea\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{student: {name: Emma, grade: A+, passed: TRUE, score: 98.5}}",
+    "output": "{\"student\": {\"name\": \"Emma\", \"grade\": \"A+\", \"passed\": true, \"score\": 98.5}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the crime type, location, and date and return as JSON.",
+    "input": "A burglary was reported on Elm Street on the night of November 3rd.",
+    "output": "{\"crime_type\": \"burglary\", \"location\": \"Elm Street\", \"date\": \"November 3rd\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {hotel: string, location: string, stars: number, price_per_night: number, amenities: array of strings}",
+    "input": "Create an entry for a 4-star hotel in Miami with a pool and gym.",
+    "output": "{\"hotel\": \"Miami Beach Hotel\", \"location\": \"Miami\", \"stars\": 4, \"price_per_night\": 250.0, \"amenities\": [\"pool\", \"gym\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function get_stock_price with parameters: symbol (string), exchange (string), currency (string).",
+    "input": "Get the current price of Apple stock on NASDAQ in USD.",
+    "output": "{\"function\": \"get_stock_price\", \"params\": {\"symbol\": \"AAPL\", \"exchange\": \"NASDAQ\", \"currency\": \"USD\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the complaint type. Return JSON with key type: billing, technical, shipping, product_quality, or other.",
+    "input": "I was charged twice for the same order last week and still have not received a refund.",
+    "output": "{\"type\": \"billing\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"match\": {sport: soccer, home: Real Madrid, away: Barcelona, score: 2-1}}",
+    "output": "{\"match\": {\"sport\": \"soccer\", \"home\": \"Real Madrid\", \"away\": \"Barcelona\", \"score\": \"2-1\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {painting: string, artist: string, year: number, style: string, current_location: string}",
+    "input": "Create an entry for The Starry Night.",
+    "output": "{\"painting\": \"The Starry Night\", \"artist\": \"Vincent van Gogh\", \"year\": 1889, \"style\": \"Post-Impressionism\", \"current_location\": \"Museum of Modern Art, New York\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the product name, discount percentage, and original price and return as JSON.",
+    "input": "The Sony headphones originally priced at $200 are now 30% off.",
+    "output": "{\"product_name\": \"Sony headphones\", \"discount_percentage\": 30, \"original_price\": 200}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{category: Electronics, subcategory: Phones, count: 250,}",
+    "output": "{\"category\": \"Electronics\", \"subcategory\": \"Phones\", \"count\": 250}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the conversation tone. Return JSON with key tone: friendly, aggressive, sarcastic, professional, or empathetic.",
+    "input": "Oh sure, because that plan has worked SO well every single time before, right?",
+    "output": "{\"tone\": \"sarcastic\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the news type. Return JSON with key type: breaking_news, opinion, feature, sports, or business.",
+    "input": "The Federal Reserve announced today a 0.25% interest rate increase amid inflation concerns.",
+    "output": "{\"type\": \"business\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {car: string, brand: string, horsepower: number, top_speed_kmh: number, price_usd: number}",
+    "input": "Create an entry for a high-performance sports car.",
+    "output": "{\"car\": \"Porsche 911 GT2 RS\", \"brand\": \"Porsche\", \"horsepower\": 700, \"top_speed_kmh\": 339, \"price_usd\": 294000}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the painting name, artist, and year created and return as JSON.",
+    "input": "The Mona Lisa was painted by Leonardo da Vinci around 1503.",
+    "output": "{\"painting\": \"The Mona Lisa\", \"artist\": \"Leonardo da Vinci\", \"year\": 1503}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_playlist with parameters: name (string), songs (array of strings), public (boolean), description (string).",
+    "input": "Create a public playlist called Road Trip Mix with songs by Taylor Swift and Ed Sheeran.",
+    "output": "{\"function\": \"create_playlist\", \"params\": {\"name\": \"Road Trip Mix\", \"songs\": [\"Taylor Swift\", \"Ed Sheeran\"], \"public\": true, \"description\": \"A playlist for road trips\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function add_to_cart with parameters: product_id (string), quantity (number), user_id (string), size (string).",
+    "input": "Add 2 units of product P-123 in size Large to the cart of user U-456.",
+    "output": "{\"function\": \"add_to_cart\", \"parameters\": {\"product_id\": \"P-123\", \"quantity\": 2, \"user_id\": \"U-456\", \"size\": \"Large\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the country, capital city, and population and return as JSON.",
+    "input": "France, with its capital Paris, has a population of approximately 68 million people.",
+    "output": "{\"country\": \"France\", \"capital\": \"Paris\", \"population\": 68000000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {author: string, nationality: string, genre: string, notable_work: string, birth_year: number}",
+    "input": "Create an entry for Gabriel Garcia Marquez.",
+    "output": "{\"author\": \"Gabriel Garcia Marquez\", \"nationality\": \"Colombian\", \"genre\": \"Magical Realism\", \"notable_work\": \"One Hundred Years of Solitude\", \"birth_year\": 1927}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {spacecraft: string, agency: string, launch_year: number, mission: string, still_active: boolean}",
+    "input": "Create an entry for the Voyager 1 spacecraft.",
+    "output": "{\"spacecraft\": \"Voyager 1\", \"agency\": \"NASA\", \"launch_year\": 1977, \"mission\": \"Interstellar Space Exploration\", \"still_active\": true}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the weather. Return JSON with key condition: sunny, cloudy, rainy, snowy, or stormy.",
+    "input": "Dark clouds are rolling in and thunder can be heard in the distance.",
+    "output": "{\"condition\": \"stormy\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the book title, author, and publication year and return as JSON.",
+    "input": "The Great Gatsby was written by F. Scott Fitzgerald and published in 1925.",
+    "output": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"publicationYear\": 1925}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{schedule: {monday: [9am, 5pm], tuesday: [10am, 6pm], wednesday: [9am, 5pm]}}",
+    "output": "{\"schedule\": {\"monday\": [\"9am\", \"5pm\"], \"tuesday\": [\"10am\", \"6pm\"], \"wednesday\": [\"9am\", \"5pm\"]}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the transaction type. Return JSON with key type: purchase, refund, transfer, withdrawal, or deposit.",
+    "input": "The customer returned the defective item and received their money back within 3 days.",
+    "output": "{\"type\": \"refund\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function reorder_stock with parameters: product_id (string), reorder_quantity (number), supplier_id (string), expected_delivery (string).",
+    "input": "Reorder 500 units of product SKU-200 from supplier SUP-05 expected by March 30th.",
+    "output": "{\"function\": \"reorder_stock\", \"params\": {\"product_id\": \"SKU-200\", \"reorder_quantity\": 500, \"supplier_id\": \"SUP-05\", \"expected_delivery\": \"2024-03-30\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the appropriate audience. Return JSON with key audience: children, teens, adults, or all_ages.",
+    "input": "A thrilling action movie with intense violence and strong language throughout.",
+    "output": "{\"audience\": \"adults\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the exercise type. Return JSON with key exercise_type: cardio, strength, flexibility, or balance.",
+    "input": "Holding the plank position engages your core and improves overall body stability.",
+    "output": "{\"exercise_type\": \"strength\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the relationship type. Return JSON with key relationship: professional, romantic, familial, friendship, or acquaintance.",
+    "input": "We have been best friends since elementary school and tell each other everything.",
+    "output": "{\"relationship\": \"friendship\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{quiz: {topic: History, questions: 10, time_limit: 30min, passing_score: 70%}}",
+    "output": "{\"quiz\": {\"topic\": \"History\", \"questions\": 10, \"time_limit\": \"30min\", \"passing_score\": \"70%\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'metrics': {'cpu': '45%', 'memory': '60%', 'disk': '30%', 'uptime': '99.9%'}}",
+    "output": "{\"metrics\": {\"cpu\": \"45%\", \"memory\": \"60%\", \"disk\": \"30%\", \"uptime\": \"99.9%\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"response\": {code: 200, message: OK, data: {id: 1, name: Test}}}",
+    "output": "{\"response\": {\"code\": 200, \"message\": \"OK\", \"data\": {\"id\": 1, \"name\": \"Test\"}}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the leadership style. Return JSON with key style: autocratic, democratic, laissez_faire, or transformational.",
+    "input": "The manager encouraged every team member to contribute ideas and vote on the final decision.",
+    "output": "{\"style\": \"democratic\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the scholarship name, amount, and eligibility criteria and return as JSON.",
+    "input": "The Gates Scholarship offers $10,000 and is open to low-income high school seniors.",
+    "output": "{\"scholarshipName\": \"The Gates Scholarship\", \"amount\": 10000, \"eligibilityCriteria\": \"low-income high school seniors\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{color: red, hex: #FF0000, rgb: {r: 255, g: 0, b: 0,}}",
+    "output": "{\"color\": \"red\", \"hex\": \"#FF0000\", \"rgb\": {\"r\": 255, \"g\": 0, \"b\": 0}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the flight number, departure city, and arrival city and return as JSON.",
+    "input": "Flight AA123 departs from Dallas and arrives in New York.",
+    "output": "{\"flightNumber\": \"AA123\", \"departureCity\": \"Dallas\", \"arrivalCity\": \"New York\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the tournament name, winner, and prize money and return as JSON.",
+    "input": "Carlos Alcaraz won the Wimbledon Championship and took home $3 million.",
+    "output": "{\"tournament\": \"Wimbledon Championship\", \"winner\": \"Carlos Alcaraz\", \"prizeMoney\": \"$3 million\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the cocktail name, main spirit, and origin country and return as JSON.",
+    "input": "The Mojito is made with rum and originates from Cuba.",
+    "output": "{\"cocktailName\": \"Mojito\", \"mainSpirit\": \"rum\", \"originCountry\": \"Cuba\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'profile': {'first': 'Ana', 'last': 'Lopez', 'email': 'ana@mail.com', 'age': 27}}",
+    "output": "{\"profile\": {\"first\": \"Ana\", \"last\": \"Lopez\", \"email\": \"ana@mail.com\", \"age\": 27}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function calculate_tax with parameters: income (number), country (string), year (number), filing_status (string).",
+    "input": "Calculate the tax for an income of $80000 in the USA for the year 2024 with single filing status.",
+    "output": "{\"function\": \"calculate_tax\", \"params\": {\"income\": 80000, \"country\": \"USA\", \"year\": 2024, \"filing_status\": \"single\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function download_file with parameters: url (string), destination_path (string), filename (string).",
+    "input": "Download the file from https://data.gov/report.csv and save it as monthly_report.csv in the downloads folder.",
+    "output": "{\"function\": \"download_file\", \"params\": {\"url\": \"https://data.gov/report.csv\", \"destination_path\": \"downloads\", \"filename\": \"monthly_report.csv\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the social media post type. Return JSON with key post_type: promotional, personal, news, humor, or educational.",
+    "input": "Did you know that honey never expires? Archaeologists have found 3000-year-old honey in Egyptian tombs!",
+    "output": "{\"post_type\": \"educational\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function recalculate_scores with parameters: model_id (string), user_ids (array of strings), score_type (string), notify_users (boolean).",
+    "input": "Recalculate credit scores for users U-1 U-2 and U-3 using model RISK-v2 without notifying them.",
+    "output": "{\"function\": \"recalculate_scores\", \"params\": {\"model_id\": \"RISK-v2\", \"user_ids\": [\"U-1\", \"U-2\", \"U-3\"], \"score_type\": \"credit\", \"notify_users\": false}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function book_appointment with parameters: doctor_name (string), patient_name (string), date (string), time (string), reason (string).",
+    "input": "Book an appointment with Dr. Smith for patient Jane Doe on March 15 at 10am for a checkup.",
+    "output": "{\"function\": \"book_appointment\", \"parameters\": {\"doctor_name\": \"Dr. Smith\", \"patient_name\": \"Jane Doe\", \"date\": \"March 15\", \"time\": \"10am\", \"reason\": \"checkup\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the marathon name, location, and course distance and return as JSON.",
+    "input": "The Boston Marathon held in Boston Massachusetts covers 42.195 kilometers.",
+    "output": "{\"marathonName\": \"The Boston Marathon\", \"location\": \"Boston, Massachusetts\", \"courseDistance\": 42.195}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the cooking method. Return JSON with key method: baking, frying, grilling, steaming, or boiling.",
+    "input": "Place the chicken on the hot metal grate over open flames for 15 minutes per side.",
+    "output": "{\"method\": \"grilling\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the airline name, route, and flight duration and return as JSON.",
+    "input": "Delta Airlines flies from New York to London in approximately 7 hours.",
+    "output": "{\"airline\": \"Delta Airlines\", \"route\": \"New York to London\", \"flightDuration\": \"7 hours\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function analyze_sentiment with parameters: text (string), language (string), return_scores (boolean).",
+    "input": "Analyze the sentiment of the English text This product exceeded all my expectations and return detailed scores.",
+    "output": "{\"function\": \"analyze_sentiment\", \"params\": {\"text\": \"This product exceeded all my expectations\", \"language\": \"English\", \"return_scores\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'notification': {'type': 'alert', 'message': 'Low battery', 'timestamp': '2024-03-01', 'read': False}}",
+    "output": "{\"notification\": {\"type\": \"alert\", \"message\": \"Low battery\", \"timestamp\": \"2024-03-01\", \"read\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the person's name, age, and city from the text and return as JSON with keys: name, age, city.",
+    "input": "Sarah Connor is 29 years old and lives in Los Angeles.",
+    "output": "{\"name\": \"Sarah Connor\", \"age\": 29, \"city\": \"Los Angeles\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the athlete name, sport, and country and return as JSON.",
+    "input": "Usain Bolt is a sprinter who competed for Jamaica in the Olympics.",
+    "output": "{\"athlete\": \"Usain Bolt\", \"sport\": \"sprinting\", \"country\": \"Jamaica\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the planet name, distance from sun, and number of moons and return as JSON.",
+    "input": "Jupiter is 778 million km from the Sun and has 95 known moons.",
+    "output": "{\"planet\": \"Jupiter\", \"distance_from_sun\": \"778 million km\", \"number_of_moons\": 95}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{cart: {items: [{id: 1, name: Book, price: 15}, {id: 2, name: Pen, price: 3}], total: 18}}",
+    "output": "{\"cart\": {\"items\": [{\"id\": 1, \"name\": \"Book\", \"price\": 15}, {\"id\": 2, \"name\": \"Pen\", \"price\": 3}], \"total\": 18}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {sport_event: string, host_country: string, year: number, participants: number, sports_count: number}",
+    "input": "Create an entry for the 2024 Paris Olympics.",
+    "output": "{\"sport_event\": \"Olympics\", \"host_country\": \"France\", \"year\": 2024, \"participants\": 10000, \"sports_count\": 32}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {vaccine: string, disease: string, doses_required: number, manufacturer: string, efficacy_percent: number}",
+    "input": "Create an entry for a measles vaccine.",
+    "output": "{\"vaccine\": \"MMR Vaccine\", \"disease\": \"Measles\", \"doses_required\": 2, \"manufacturer\": \"Merck\", \"efficacy_percent\": 93}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {gem: string, hardness: number, color: string, price_per_carat_usd: number, main_source_country: string}",
+    "input": "Create an entry for Emerald.",
+    "output": "{\"gem\": \"Emerald\", \"hardness\": 7.5, \"color\": \"Green\", \"price_per_carat_usd\": 300, \"main_source_country\": \"Colombia\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function add_watermark with parameters: document_url (string), text (string), position (string), opacity (number).",
+    "input": "Add a CONFIDENTIAL watermark to https://docs.com/report.pdf centered at 30% opacity.",
+    "output": "{\"function\": \"add_watermark\", \"params\": {\"document_url\": \"https://docs.com/report.pdf\", \"text\": \"CONFIDENTIAL\", \"position\": \"centered\", \"opacity\": 0.3}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'device': {'type': 'laptop', 'brand': 'Dell', 'ram': '16GB', 'ssd': True}}",
+    "output": "{\"device\": {\"type\": \"laptop\", \"brand\": \"Dell\", \"ram\": \"16GB\", \"ssd\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the prime minister name, country, and party and return as JSON.",
+    "input": "Rishi Sunak is the Prime Minister of the United Kingdom and leads the Conservative Party.",
+    "output": "{\"primeMinister\": \"Rishi Sunak\", \"country\": \"United Kingdom\", \"party\": \"Conservative Party\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the narrative perspective. Return JSON with key perspective: first_person, second_person, or third_person.",
+    "input": "You wake up and find a mysterious letter under your door with no return address.",
+    "output": "{\"perspective\": \"first_person\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{job: {title: Engineer, company: TechCorp, salary: 90000, remote: true,}}",
+    "output": "{\"job\": {\"title\": \"Engineer\", \"company\": \"TechCorp\", \"salary\": 90000, \"remote\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_task with parameters: title (string), description (string), due_date (string), priority (string), assignee (string).",
+    "input": "Create a high priority task for John to finish the budget report by Friday.",
+    "output": "{\"function\": \"create_task\", \"params\": {\"title\": \"Budget Report\", \"description\": \"Finish the budget report\", \"due_date\": \"Friday\", \"priority\": \"high\", \"assignee\": \"John\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {startup: string, founder: string, founded_year: number, industry: string, valuation_billion: number}",
+    "input": "Create an entry for a fintech startup valued at $2 billion.",
+    "output": "{\"startup\": \"Fintech Inc.\", \"founder\": \"John Doe\", \"founded_year\": 2010, \"industry\": \"Financial Technology\", \"valuation_billion\": 2}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{id: 101, role: admin, active: TRUE}",
+    "output": "{\"id\": 101, \"role\": \"admin\", \"active\": true}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the sports team name, league, and home stadium and return as JSON.",
+    "input": "The Dallas Cowboys play in the NFL and their home stadium is AT&T Stadium.",
+    "output": "{\"teamName\": \"Dallas Cowboys\", \"league\": \"NFL\", \"homeStadium\": \"AT&T Stadium\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {bank: string, country: string, assets_billion: number, founded_year: number, branches: number}",
+    "input": "Create an entry for a major US commercial bank.",
+    "output": "{\"bank\": \"JPMorgan Chase\", \"country\": \"United States\", \"assets_billion\": 2.73, \"founded_year\": 1877, \"branches\": 4912}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the legal document type. Return JSON with key doc_type: contract, will, patent, lawsuit, or license.",
+    "input": "This agreement grants the licensee the right to use the software on up to five devices.",
+    "output": "{\"doc_type\": \"license\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {constellation: string, hemisphere: string, brightest_star: string, number_of_stars: number, mythology_origin: string}",
+    "input": "Create an entry for Orion.",
+    "output": "{\"constellation\": \"Orion\", \"hemisphere\": \"Northern\", \"brightest_star\": \"Rigel\", \"number_of_stars\": 7, \"mythology_origin\": \"Greek\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{blog: {title: My Journey, posts: 52, subscribers: 1200, monetized: false,}}",
+    "output": "{\"blog\": {\"title\": \"My Journey\", \"posts\": 52, \"subscribers\": 1200, \"monetized\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function log_event with parameters: event_type (string), user_id (string), metadata (object), timestamp (string).",
+    "input": "Log a purchase event for user U-123 with product ID P-456 and amount $75 at the current time.",
+    "output": "{\"function\": \"log_event\", \"params\": {\"event_type\": \"purchase\", \"user_id\": \"U-123\", \"metadata\": {\"product_id\": \"P-456\", \"amount\": 75}, \"timestamp\": \"current_time\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the employee name, department, and years of experience and return as JSON.",
+    "input": "Jane Smith has been working in the Marketing department for 8 years.",
+    "output": "{\"name\": \"Jane Smith\", \"department\": \"Marketing\", \"yearsOfExperience\": 8}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_invoice with parameters: client_name (string), items (array of strings), amounts (array of numbers), due_date (string).",
+    "input": "Create an invoice for ABC Corp for consulting and design services of $500 and $300 due next month.",
+    "output": "{\"function\": \"create_invoice\", \"params\": {\"client_name\": \"ABC Corp\", \"items\": [\"consulting\", \"design services\"], \"amounts\": [500, 300], \"due_date\": \"next month\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function place_order with parameters: product_id (string), quantity (number), shipping_address (string), payment_method (string).",
+    "input": "Order 3 units of SKU-789 ship to 123 Main St Austin TX using credit card.",
+    "output": "{\"function\": \"place_order\", \"parameters\": {\"product_id\": \"SKU-789\", \"quantity\": 3, \"shipping_address\": \"123 Main St Austin TX\", \"payment_method\": \"credit card\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {forest: string, country: string, area_km2: number, primary_tree: string, biodiversity_index: number}",
+    "input": "Create an entry for the Amazon Rainforest.",
+    "output": "{\"forest\": \"Amazon Rainforest\", \"country\": \"Brazil\", \"area_km2\": 5500000, \"primary_tree\": \"Ceiba pentandra\", \"biodiversity_index\": 0.85}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function monitor_endpoint with parameters: url (string), interval_seconds (number), alert_on_failure (boolean), notify_email (string).",
+    "input": "Monitor https://api.myapp.com/health every 60 seconds and send failure alerts to ops@company.com.",
+    "output": "{\"function\": \"monitor_endpoint\", \"params\": {\"url\": \"https://api.myapp.com/health\", \"interval_seconds\": 60, \"alert_on_failure\": true, \"notify_email\": \"ops@company.com\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Is this review helpful? Return JSON with key helpful: true or false and key reason as a short string.",
+    "input": "Great product, five stars.",
+    "output": "{\"helpful\": true, \"reason\": \"positive review\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function convert_currency with parameters: amount (number), from_currency (string), to_currency (string).",
+    "input": "Convert 1000 US dollars to Japanese Yen.",
+    "output": "{\"function\": \"convert_currency\", \"params\": {\"amount\": 1000, \"from_currency\": \"USD\", \"to_currency\": \"JPY\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the travel type. Return JSON with key travel_type: business, leisure, adventure, medical, or educational.",
+    "input": "He booked flights to attend three client meetings and a conference in Tokyo.",
+    "output": "{\"travel_type\": \"business\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the city, temperature, and weather condition and return as JSON.",
+    "input": "It is currently 75 degrees Fahrenheit and sunny in Austin, Texas.",
+    "output": "{\"city\": \"Austin\", \"temperature\": 75, \"weatherCondition\": \"sunny\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {movie: string, director: string, year: number, genre: string, imdb_score: number}",
+    "input": "Create a movie entry for an action film released in 2022.",
+    "output": "{\"movie\": \"Red Notice\", \"director\": \"Rawson Marshall Thurber\", \"year\": 2022, \"genre\": \"action\", \"imdb_score\": 6.8}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'dashboard': {'widgets': ['chart', 'table', 'map',], 'theme': 'dark', 'auto_refresh': True}}",
+    "output": "{\"dashboard\": {\"widgets\": [\"chart\", \"table\", \"map\"], \"theme\": \"dark\", \"auto_refresh\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {hospital: string, patient_id: string, admission_date: string, diagnosis: string, discharged: boolean}",
+    "input": "Create a hospital record for a patient admitted with pneumonia.",
+    "output": "{\"hospital\": \"General Hospital\", \"patient_id\": \"PT001\", \"admission_date\": \"2022-01-01\", \"diagnosis\": \"Pneumonia\", \"discharged\": false}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the type of sports injury. Return JSON with key injury: sprain, fracture, concussion, strain, or dislocation.",
+    "input": "The ligament in his ankle stretched beyond its normal range after the awkward landing.",
+    "output": "{\"injury\": \"sprain\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the formality. Return JSON with key formality: formal, informal, or neutral.",
+    "input": "Hey! Just wanted to check if you are free to grab lunch tomorrow?",
+    "output": "{\"formality\": \"informal\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{first_name: Jane, last_name: Doe, age: 28, city: Austin}",
+    "output": "{\"first_name\": \"Jane\", \"last_name\": \"Doe\", \"age\": 28, \"city\": \"Austin\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the cloud service model. Return JSON with key model: iaas, paas, or saas.",
+    "input": "The company uses Google Docs and Sheets for all its collaborative document editing.",
+    "output": "{\"model\": \"saas\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the topic. Return JSON with key category: sports, politics, technology, entertainment, or health.",
+    "input": "Scientists have developed a new vaccine that could prevent multiple strains of influenza.",
+    "output": "{\"category\": \"health\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the programming language. Return JSON with key language: python, javascript, java, cpp, or other.",
+    "input": "def fibonacci(n): return n if n <= 1 else fibonacci(n-1) + fibonacci(n-2)",
+    "output": "{\"language\": \"python\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the marathon runner name, finish time, and race name and return as JSON.",
+    "input": "Eliud Kipchoge completed the Berlin Marathon in 2 hours 1 minute and 9 seconds.",
+    "output": "{\"runnerName\": \"Eliud Kipchoge\", \"finishTime\": \"2:01:09\", \"raceName\": \"Berlin Marathon\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'ticket': {'id': 'T-500', 'status': 'open', 'priority': 'high', 'assigned': None}}",
+    "output": "{\"ticket\": {\"id\": \"T-500\", \"status\": \"open\", \"priority\": \"high\", \"assigned\": null}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function find_duplicates with parameters: table (string), columns (array of strings), action (string), report_only (boolean).",
+    "input": "Find duplicates in the customers table based on email and phone columns and just generate a report without deleting.",
+    "output": "{\"function\": \"find_duplicates\", \"params\": {\"table\": \"customers\", \"columns\": [\"email\", \"phone\"], \"action\": \"report\", \"report_only\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"launch\": {rocket: Falcon 9, payload: Starlink, date: 2024-03-15, success: TRUE}}",
+    "output": "{\"launch\": {\"rocket\": \"Falcon 9\", \"payload\": \"Starlink\", \"date\": \"2024-03-15\", \"success\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{type: alert, message: System overload, timestamp: 2024-01-15, severity: high}",
+    "output": "{\"type\": \"alert\", \"message\": \"System overload\", \"timestamp\": \"2024-01-15\", \"severity\": \"high\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {robot: string, manufacturer: string, application: string, payload_kg: number, autonomous: boolean}",
+    "input": "Create an entry for an industrial assembly robot.",
+    "output": "{\"robot\": \"IRB 7600\", \"manufacturer\": \"ABB Robotics\", \"application\": \"Industrial Assembly\", \"payload_kg\": 265, \"autonomous\": false}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the type of renewable energy. Return JSON with key energy: solar, wind, hydro, geothermal, or biomass.",
+    "input": "Turbines positioned offshore capture the kinetic energy of moving ocean air.",
+    "output": "{\"energy\": \"wind\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{hospital: {name: City Medical, beds: 500, icu: 50, emergency: true, public: TRUE}}",
+    "output": "{\"hospital\": {\"name\": \"City Medical\", \"beds\": 500, \"icu\": 50, \"emergency\": true, \"public\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the database type. Return JSON with key db_type: relational, document, key_value, graph, or columnar.",
+    "input": "Data is stored as collections of JSON-like documents with flexible schemas.",
+    "output": "{\"db_type\": \"document\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function search_hotels with parameters: city (string), check_in (string), check_out (string), guests (number), max_price_per_night (number).",
+    "input": "Find hotels in Miami for 2 guests from March 5 to March 10 under $200 per night.",
+    "output": "{\"function\": \"search_hotels\", \"params\": {\"city\": \"Miami\", \"check_in\": \"2024-03-05\", \"check_out\": \"2024-03-10\", \"guests\": 2, \"max_price_per_night\": 200}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the recipe name, prep time, and number of servings and return as JSON.",
+    "input": "Classic Chocolate Chip Cookies take 20 minutes to prepare and yield 24 servings.",
+    "output": "{\"recipe_name\": \"Classic Chocolate Chip Cookies\", \"prep_time\": 20, \"servings\": 24}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function clone_repository with parameters: source_url (string), destination_path (string), branch (string), depth (number).",
+    "input": "Clone the main branch of https://github.com/user/repo to the projects folder with depth 1.",
+    "output": "{\"function\": \"clone_repository\", \"params\": {\"source_url\": \"https://github.com/user/repo\", \"destination_path\": \"projects\", \"branch\": \"main\", \"depth\": 1}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the ship name, type, and passenger capacity and return as JSON.",
+    "input": "The Wonder of the Seas is a cruise ship with a capacity of 6,988 passengers.",
+    "output": "{\"ship_name\": \"The Wonder of the Seas\", \"ship_type\": \"cruise ship\", \"passenger_capacity\": 6988}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {product_id: string, name: string, price: number, in_stock: boolean, tags: array of strings}",
+    "input": "Create a product entry for a wireless keyboard.",
+    "output": "{\"product_id\": \"WKBD001\", \"name\": \"Wireless Keyboard Pro\", \"price\": 99.99, \"in_stock\": true, \"tags\": [\"wireless\", \"keyboard\", \"gaming\", \"accessory\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the question type. Return JSON with key q_type: factual, opinion, hypothetical, or procedural.",
+    "input": "What would happen if humans could photosynthesize like plants?",
+    "output": "{\"q_type\": \"hypothetical\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{name: Alice, age: 30, city: New York",
+    "output": "{\"name\": \"Alice\", \"age\": 30, \"city\": \"New York\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'server': {'host': 'localhost', 'port': 8080, 'ssl': False}}",
+    "output": "{\"server\": {\"host\": \"localhost\", \"port\": 8080, \"ssl\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the law name, country, and year enacted and return as JSON.",
+    "input": "The Americans with Disabilities Act was enacted in the United States in 1990.",
+    "output": "{\"lawName\": \"Americans with Disabilities Act\", \"country\": \"United States\", \"yearEnacted\": 1990}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'user_id': 'U123', 'role': 'admin', 'permissions': ['read', 'write', 'delete']}",
+    "output": "{\"user_id\": \"U123\", \"role\": \"admin\", \"permissions\": [\"read\", \"write\", \"delete\"]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"migration\": {from: PostgreSQL, to: MongoDB, records: 1000000, completed: FALSE}}",
+    "output": "{\"migration\": {\"from\": \"PostgreSQL\", \"to\": \"MongoDB\", \"records\": 1000000, \"completed\": false}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"task\": {id: T-99, title: Fix bug, done: false, priority: high,}}",
+    "output": "{\"task\": {\"id\": \"T-99\", \"title\": \"Fix bug\", \"done\": false, \"priority\": \"high\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the app name, developer, and number of downloads and return as JSON.",
+    "input": "TikTok developed by ByteDance has been downloaded over 3 billion times.",
+    "output": "{\"app_name\": \"TikTok\", \"developer\": \"ByteDance\", \"downloads\": 3000000000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract all product names and their prices. Return a JSON array of objects with keys: product, price.",
+    "input": "The store sells Apples for $1.50, Bananas for $0.75, and Mangoes for $2.00.",
+    "output": "[\n  {\"product\": \"Apples\", \"price\": 1.50},\n  {\"product\": \"Bananas\", \"price\": 0.75},\n  {\"product\": \"Mangoes\", \"price\": 2.00}\n]",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'filters': {'min_price': 10, 'max_price': 500, 'in_stock': True,}}",
+    "output": "{\"filters\": {\"min_price\": 10, \"max_price\": 500, \"in_stock\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the environmental impact. Return JSON with key impact: positive, negative, or neutral.",
+    "input": "The factory installed solar panels and reduced its carbon emissions by 40%.",
+    "output": "{\"impact\": \"positive\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the economic system. Return JSON with key system: capitalism, socialism, communism, mixed, or feudalism.",
+    "input": "The state owns all major industries and the government plans economic production centrally.",
+    "output": "{\"system\": \"socialism\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function update_user_profile with parameters: user_id (string), name (string), email (string), phone (string).",
+    "input": "Update user ID U-42 name to Robert Smith email to rob@email.com and phone to 555-0000.",
+    "output": "{\"function\": \"update_user_profile\", \"params\": {\"user_id\": \"U-42\", \"name\": \"Robert Smith\", \"email\": \"rob@email.com\", \"phone\": \"555-0000\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{location: {country: USA, state: Texas, city: Austin, zip: 78701}}",
+    "output": "{\"location\": {\"country\": \"USA\", \"state\": \"Texas\", \"city\": \"Austin\", \"zip\": \"78701\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {airline: string, iata_code: string, hub: string, fleet_size: number, founded_year: number}",
+    "input": "Create an entry for Emirates Airlines.",
+    "output": "{\"airline\": \"Emirates Airlines\", \"iata_code\": \"EK\", \"hub\": \"Dubai International Airport\", \"fleet_size\": 254, \"founded_year\": 1985}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the type of lie. Return JSON with key lie_type: white_lie, deception, omission, or exaggeration.",
+    "input": "He said the project would take two weeks but secretly knew it would take two months.",
+    "output": "{\"lie_type\": \"deception\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {country: string, area_km2: number, official_language: string, currency: string, gdp_billion: number}",
+    "input": "Create an entry for Brazil.",
+    "output": "{\"country\": \"Brazil\", \"area_km2\": 8514877, \"official_language\": \"Portuguese\", \"currency\": \"Real\", \"gdp_billion\": 2056.27}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the province name, country, and population and return as JSON.",
+    "input": "Ontario is a province of Canada with a population of about 15 million people.",
+    "output": "{\"province\": \"Ontario\", \"country\": \"Canada\", \"population\": 15000000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {museum: string, city: string, founded_year: number, free_entry: boolean, annual_visitors_million: number}",
+    "input": "Create an entry for the British Museum.",
+    "output": "{\"museum\": \"British Museum\", \"city\": \"London\", \"founded_year\": 1753, \"free_entry\": true, \"annual_visitors_million\": 6.8}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {phone: string, brand: string, release_year: number, battery_mah: number, camera_mp: number}",
+    "input": "Create an entry for a flagship Android smartphone.",
+    "output": "{\"phone\": \"Galaxy S22 Ultra\", \"brand\": \"Samsung\", \"release_year\": 2022, \"battery_mah\": 5000, \"camera_mp\": 108}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{package: {name: myapp, version: 1.0.0, dependencies: [react, express,]}}",
+    "output": "{\"package\": {\"name\": \"myapp\", \"version\": \"1.0.0\", \"dependencies\": [\"react\", \"express\"]}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the season described. Return JSON with key season: spring, summer, autumn, or winter.",
+    "input": "Leaves of red orange and gold carpeted the ground as a cool breeze swept through the park.",
+    "output": "{\"season\": \"autumn\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function assign_role with parameters: user_id (string), role (string), permissions (array of strings), expires_at (string).",
+    "input": "Assign the editor role to user U-200 with read and write permissions expiring on December 31 2024.",
+    "output": "{\"function\": \"assign_role\", \"params\": {\"user_id\": \"U-200\", \"role\": \"editor\", \"permissions\": [\"read\", \"write\"], \"expires_at\": \"2024-12-31\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the company name, job title, and salary from this job posting and return as JSON.",
+    "input": "TechCorp is hiring a Senior Engineer with a salary of $120,000 per year.",
+    "output": "{\"company\": \"TechCorp\", \"jobTitle\": \"Senior Engineer\", \"salary\": 120000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {food: string, origin: string, main_ingredients: array of strings, spicy: boolean, calories_per_serving: number}",
+    "input": "Create an entry for Pad Thai.",
+    "output": "{\"food\": \"Pad Thai\", \"origin\": \"Thailand\", \"main_ingredients\": [\"rice noodles\", \"shrimp\", \"tofu\", \"bean sprouts\"], \"spicy\": true, \"calories_per_serving\": 357}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{award: Oscars, year: 2024, best_picture: Oppenheimer, ceremony: Hollywood}",
+    "output": "{\"award\": \"Oscars\", \"year\": 2024, \"best_picture\": \"Oppenheimer\", \"ceremony\": \"Hollywood\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the communication medium. Return JSON with key medium: verbal, written, visual, or non_verbal.",
+    "input": "The infographic used color-coded charts and icons to explain the data trends.",
+    "output": "{\"medium\": \"visual\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Classify the scientific field. Return JSON with key field: biology, chemistry, physics, astronomy, or earth_science.",
+    "input": "Researchers analyzed the DNA sequences of 500 plant species to trace evolutionary relationships.",
+    "output": "{\"field\": \"biology\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the space mission name, agency, and launch year and return as JSON.",
+    "input": "Apollo 11 was launched by NASA in 1969.",
+    "output": "{\"mission\": \"Apollo 11\", \"agency\": \"NASA\", \"launchYear\": 1969}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function resize_image with parameters: image_url (string), width (number), height (number), format (string).",
+    "input": "Resize the image at https://example.com/photo.jpg to 800x600 pixels in PNG format.",
+    "output": "{\"function\": \"resize_image\", \"params\": {\"image_url\": \"https://example.com/photo.jpg\", \"width\": 800, \"height\": 600, \"format\": \"PNG\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function verify_identity with parameters: user_id (string), method (string), document_type (string), expiry_check (boolean).",
+    "input": "Verify identity of user U-555 using document verification with a passport and check expiry.",
+    "output": "{\"function\": \"verify_identity\", \"params\": {\"user_id\": \"U-555\", \"method\": \"document verification\", \"document_type\": \"passport\", \"expiry_check\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function run_ab_test with parameters: test_name (string), variant_a (string), variant_b (string), sample_size (number), duration_days (number).",
+    "input": "Run an AB test called Button Color Test comparing blue and green buttons with 1000 users for 7 days.",
+    "output": "{\"function\": \"run_ab_test\", \"params\": {\"test_name\": \"Button Color Test\", \"variant_a\": \"blue\", \"variant_b\": \"green\", \"sample_size\": 1000, \"duration_days\": 7}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract all phone numbers and their owners as a JSON array.",
+    "input": "Call Alice at 555-1234 or Bob at 555-5678 for support.",
+    "output": "{\"phoneNumbers\": [\n  {\"owner\": \"Alice\", \"phoneNumber\": \"555-1234\"},\n  {\"owner\": \"Bob\", \"phoneNumber\": \"555-5678\"}\n]}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Extract the scientist name, discovery, and year and return as JSON.",
+    "input": "Marie Curie discovered radium in 1898.",
+    "output": "{\"scientist\": \"Marie Curie\", \"discovery\": \"radium\", \"year\": 1898}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {network: string, country: string, launched_year: number, subscribers_million: number, flagship_show: string}",
+    "input": "Create an entry for a major streaming service.",
+    "output": "{\"network\": \"Netflix\", \"country\": \"United States\", \"launched_year\": 2007, \"subscribers_million\": 220, \"flagship_show\": \"Stranger Things\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{article: {id: 99, title: AI Trends, author: Jane, tags: [ai, tech, future,]}}",
+    "output": "{\"article\": {\"id\": 99, \"title\": \"AI Trends\", \"author\": \"Jane\", \"tags\": [\"ai\", \"tech\", \"future\"]}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{username: john_doe, email: john@example.com, verified: False}",
+    "output": "{\"username\": \"john_doe\", \"email\": \"john@example.com\", \"verified\": false}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function send_email with parameters: to (string), subject (string), body (string), cc (array of strings).",
+    "input": "Send an email to boss@work.com about the Q4 report being ready and CC the team.",
+    "output": "{\"function\": \"send_email\", \"params\": {\"to\": \"boss@work.com\", \"subject\": \"Q4 Report Ready\", \"body\": \"The Q4 report is ready for review.\", \"cc\": [\"team1@work.com\", \"team2@work.com\"]}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the speaker name, topic, and conference name and return as JSON.",
+    "input": "Dr. Emily Chen will present on AI Ethics at the Global Tech Summit.",
+    "output": "{\"speaker\": \"Dr. Emily Chen\", \"topic\": \"AI Ethics\", \"conference\": \"Global Tech Summit\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"game\": {title: Chess, players: 2, turn: white, check: False, moves: 24}}",
+    "output": "{\"game\": {\"title\": \"Chess\", \"players\": 2, \"turn\": \"white\", \"check\": false, \"moves\": 24}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"settings\": {theme: dark, language: en, notifications: True, font_size: 14}}",
+    "output": "{\"settings\": {\"theme\": \"dark\", \"language\": \"en\", \"notifications\": true, \"font_size\": 14}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {airport: string, iata_code: string, city: string, country: string, annual_passengers_million: number}",
+    "input": "Create an entry for Heathrow Airport.",
+    "output": "{\"airport\": \"Heathrow Airport\", \"iata_code\": \"LHR\", \"city\": \"London\", \"country\": \"United Kingdom\", \"annual_passengers_million\": 80.1}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'product': 'Phone', 'specs': {'ram': '8GB', 'storage': '128GB'}, 'price': 699}",
+    "output": "{\"product\": \"Phone\", \"specs\": {\"ram\": \"8GB\", \"storage\": \"128GB\"}, \"price\": 699}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{survey: {question: How satisfied are you?, scale: 1-10, avg_score: 8.2}}",
+    "output": "{\"survey\": {\"question\": \"How satisfied are you?\", \"scale\": \"1-10\", \"avg_score\": 8.2}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{users: [{id: 1, name: Bob}, {id: 2, name: Carol]}",
+    "output": "{\"users\": [{\"id\": 1, \"name\": \"Bob\"}, {\"id\": 2, \"name\": \"Carol\"}]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the podcast name, host, and number of episodes and return as JSON.",
+    "input": "The Joe Rogan Experience hosted by Joe Rogan has over 2,000 episodes.",
+    "output": "{\"podcastName\": \"The Joe Rogan Experience\", \"host\": \"Joe Rogan\", \"numberOfEpisodes\": 2000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {university: string, city: string, country: string, ranking: number, student_count: number}",
+    "input": "Create an entry for Harvard University.",
+    "output": "{\"university\": \"Harvard University\", \"city\": \"Cambridge\", \"country\": \"USA\", \"ranking\": 1, \"student_count\": 21000}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the song title, artist, and release year and return as JSON.",
+    "input": "Bohemian Rhapsody by Queen was released in 1975.",
+    "output": "{\"song_title\": \"Bohemian Rhapsody\", \"artist\": \"Queen\", \"release_year\": 1975}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{coordinates: {lat: 29.4241, lng: -98.4936}, city: San Antonio}",
+    "output": "{\"coordinates\": {\"lat\": 29.4241, \"lng\": -98.4936}, \"city\": \"San Antonio\"}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the customer satisfaction level. Return JSON with key satisfaction: very_satisfied, satisfied, neutral, dissatisfied, or very_dissatisfied.",
+    "input": "The product arrived on time and worked exactly as described. Very happy with my purchase.",
+    "output": "{\"satisfaction\": \"very_satisfied\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function impersonate_user with parameters: admin_id (string), target_user_id (string), reason (string), duration_minutes (number).",
+    "input": "Let admin A-1 impersonate user U-500 for 30 minutes to troubleshoot their account issue.",
+    "output": "{\"function\": \"impersonate_user\", \"params\": {\"admin_id\": \"A-1\", \"target_user_id\": \"U-500\", \"reason\": \"troubleshoot account issue\", \"duration_minutes\": 30}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the author name, book title, and genre and return as JSON.",
+    "input": "J.K. Rowling wrote Harry Potter and the Sorcerers Stone which belongs to the fantasy genre.",
+    "output": "{\"author\": \"J.K. Rowling\", \"bookTitle\": \"Harry Potter and the Sorcerers Stone\", \"genre\": \"fantasy\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the art style. Return JSON with key style: realism, impressionism, abstract, surrealism, or minimalism.",
+    "input": "Melting clocks draped over barren landscapes evoke a dreamlike distortion of time.",
+    "output": "{\"style\": \"surrealism\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the ocean name, average depth in meters, and area in square km and return as JSON.",
+    "input": "The Pacific Ocean has an average depth of 4,000 meters and covers 165 million square kilometers.",
+    "output": "{\"oceanName\": \"The Pacific Ocean\", \"averageDepth\": 4000, \"area\": 165000000}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {superhero: string, alter_ego: string, powers: array of strings, publisher: string, first_appearance_year: number}",
+    "input": "Create an entry for Batman.",
+    "output": "{\"superhero\": \"Batman\", \"alter_ego\": \"Bruce Wayne\", \"powers\": [\"Martial Arts\", \"Genius Intellect\", \"Peak Physical Conditioning\"], \"publisher\": \"DC Comics\", \"first_appearance_year\": 1939}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the logical fallacy. Return JSON with key fallacy: ad_hominem, straw_man, false_dilemma, or slippery_slope.",
+    "input": "If we allow same-day delivery then soon people will expect delivery within minutes and the whole system will collapse.",
+    "output": "{\"fallacy\": \"slippery_slope\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {desert: string, continent: string, area_km2: number, avg_temp_celsius: number, annual_rainfall_mm: number}",
+    "input": "Create an entry for the Sahara Desert.",
+    "output": "{\"desert\": \"Sahara\", \"continent\": \"Africa\", \"area_km2\": 9400000, \"avg_temp_celsius\": 25, \"annual_rainfall_mm\": 25}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the text difficulty level. Return JSON with key difficulty: beginner, intermediate, or advanced.",
+    "input": "The eigenvalues of a symmetric matrix are always real and its eigenvectors are orthogonal.",
+    "output": "{\"difficulty\": \"advanced\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {city: string, founded_year: number, population: number, mayor: string, famous_for: string}",
+    "input": "Create an entry for New York City.",
+    "output": "{\"city\": \"New York City\", \"founded_year\": 1624, \"population\": 8537673, \"mayor\": \"Eric Adams\", \"famous_for\": \"The Statue of Liberty\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function create_badge with parameters: name (string), criteria (string), icon_url (string), points_awarded (number), visible_to_public (boolean).",
+    "input": "Create a Top Contributor badge awarded for 50 accepted answers using icon at https://icons.com/star.png worth 100 points visible to everyone.",
+    "output": "{\"function\": \"create_badge\", \"params\": {\"name\": \"Top Contributor\", \"criteria\": \"50 accepted answers\", \"icon_url\": \"https://icons.com/star.png\", \"points_awarded\": 100, \"visible_to_public\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the architectural style. Return JSON with key style: modern, classical, gothic, art_deco, or minimalist.",
+    "input": "The building features pointed arches, flying buttresses, and stained glass windows.",
+    "output": "{\"style\": \"gothic\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {bridge: string, location: string, length_m: number, year_built: number, material: string}",
+    "input": "Create an entry for a famous suspension bridge.",
+    "output": "{\"bridge\": \"Golden Gate Bridge\", \"location\": \"San Francisco, USA\", \"length_m\": 1280, \"year_built\": 1937, \"material\": \"Steel\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {watch: string, brand: string, price_usd: number, water_resistant: boolean, features: array of strings}",
+    "input": "Create an entry for a luxury smartwatch.",
+    "output": "{\"watch\": \"Luxury Smartwatch\", \"brand\": \"Omega\", \"price_usd\": 1200.0, \"water_resistant\": true, \"features\": [\"GPS\", \"Heart Rate Monitor\", \"Touch Screen\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the type of data visualization. Return JSON with key chart_type: bar, line, pie, scatter, or heatmap.",
+    "input": "Each slice of the circular diagram represents a different department's share of the total budget.",
+    "output": "{\"chart_type\": \"pie\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {landmark: string, city: string, year_built: number, height_m: number, visitors_per_year_million: number}",
+    "input": "Create an entry for the Eiffel Tower.",
+    "output": "{\"landmark\": \"Eiffel Tower\", \"city\": \"Paris\", \"year_built\": 1889, \"height_m\": 324, \"visitors_per_year_million\": 7.1}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{report: {title: Q4 Results, year: 2023, revenue: $1.2M, growth: 15%}}",
+    "output": "{\"report\": {\"title\": \"Q4 Results\", \"year\": 2023, \"revenue\": \"$1.2M\", \"growth\": \"15%\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function convert_file with parameters: input_url (string), input_format (string), output_format (string), output_path (string).",
+    "input": "Convert the file at https://files.com/doc.docx from DOCX to PDF and save to the exports folder.",
+    "output": "{\"function\": \"convert_file\", \"params\": {\"input_url\": \"https://files.com/doc.docx\", \"input_format\": \"DOCX\", \"output_format\": \"PDF\", \"output_path\": \"exports\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function render_template with parameters: template_name (string), variables (object), output_format (string), save_path (string).",
+    "input": "Render the invoice template with client name ABC Corp and total $1500 as PDF and save to invoices folder.",
+    "output": "{\"function_name\": \"render_template\", \"params\": {\"template_name\": \"invoice\", \"variables\": {\"client_name\": \"ABC Corp\", \"total\": 1500}, \"output_format\": \"PDF\", \"save_path\": \"invoices\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'event': 'concert', 'date': '2024-06-15', 'price': 75, 'sold_out': False}",
+    "output": "{\"event\": \"concert\", \"date\": \"2024-06-15\", \"price\": 75, \"sold_out\": false}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Classify the threat level. Return JSON with key threat: none, low, medium, or high.",
+    "input": "Suspicious login detected from an unrecognized device in a foreign country.",
+    "output": "{\"threat\": \"high\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {name: string, age: number, is_student: boolean, courses: array of strings}",
+    "input": "Create a profile for a 20-year-old student named Maya who studies Math and Physics.",
+    "output": "{\"name\": \"Maya\", \"age\": 20, \"is_student\": true, \"courses\": [\"Math\", \"Physics\"]}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the award name, recipient, and year and return as JSON.",
+    "input": "Albert Einstein received the Nobel Prize in Physics in 1921.",
+    "output": "{\"award\": \"Nobel Prize in Physics\", \"recipient\": \"Albert Einstein\", \"year\": 1921}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the urgency. Return JSON with key priority: low, medium, high, or critical.",
+    "input": "The entire production system is down and customers cannot access the website.",
+    "output": "{\"priority\": \"critical\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Extract the movie title, director, and release year and return as JSON.",
+    "input": "Inception, directed by Christopher Nolan, was released in 2010.",
+    "output": "{\"title\": \"Inception\", \"director\": \"Christopher Nolan\", \"releaseYear\": 2010}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function send_gift with parameters: sender_id (string), recipient_id (string), gift_type (string), message (string), anonymous (boolean).",
+    "input": "Send a virtual coffee gift from user U-10 to user U-20 with message Congrats on the promotion anonymously.",
+    "output": "{\"function\": \"send_gift\", \"params\": {\"sender_id\": \"U-10\", \"recipient_id\": \"U-20\", \"gift_type\": \"virtual_coffee\", \"message\": \"Congrats on the promotion\", \"anonymous\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Classify the type of humor. Return JSON with key humor_type: pun, sarcasm, irony, slapstick, or dark.",
+    "input": "I told my doctor I broke my arm in two places. He told me to stop going to those places.",
+    "output": "{\"humor_type\": \"pun\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {festival: string, religion: string, month: string, duration_days: number, main_activity: string}",
+    "input": "Create an entry for Diwali.",
+    "output": "{\"festival\": \"Diwali\", \"religion\": \"Hinduism\", \"month\": \"October or November\", \"duration_days\": 5, \"main_activity\": \"Lighting lamps and fireworks\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the email category. Return JSON with key category: work, personal, newsletter, promotional, or spam.",
+    "input": "Please review the attached quarterly budget report before our meeting on Friday.",
+    "output": "{\"category\": \"work\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {enzyme: string, function: string, organ: string, optimal_ph: number, substrate: string}",
+    "input": "Create an entry for the enzyme Amylase.",
+    "output": "{\"enzyme\": \"Amylase\", \"function\": \"breaks down starches into sugars\", \"organ\": \"pancreas\", \"optimal_ph\": 6.7, \"substrate\": \"starch\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"sensor\": {id: S-01, type: temperature, value: 22.5, unit: celsius, online: true}}",
+    "output": "{\"sensor\": {\"id\": \"S-01\", \"type\": \"temperature\", \"value\": 22.5, \"unit\": \"celsius\", \"online\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {vehicle: string, brand: string, year: number, electric: boolean, range_km: number}",
+    "input": "Create an entry for an electric Tesla car from 2023.",
+    "output": "{\"vehicle\": \"Car\", \"brand\": \"Tesla\", \"year\": 2023, \"electric\": true, \"range_km\": 500}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {element: string, symbol: string, atomic_number: number, category: string, discovered_year: number}",
+    "input": "Create an entry for the element Uranium.",
+    "output": "{\"element\": \"Uranium\", \"symbol\": \"U\", \"atomic_number\": 92, \"category\": \"Actinide\", \"discovered_year\": 1789}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Extract the country name, GDP in trillion USD, and president and return as JSON.",
+    "input": "The United States has a GDP of approximately $27 trillion and is led by President Biden.",
+    "output": "{\"country\": \"The United States\", \"GDP\": 27, \"president\": \"Biden\"}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function split_payment with parameters: order_id (string), payers (array of strings), amounts (array of numbers), currency (string).",
+    "input": "Split payment for order ORD-88 between Alice $30 Bob $50 and Carol $20 in USD.",
+    "output": "{\"function\": \"split_payment\", \"params\": {\"order_id\": \"ORD-88\", \"payers\": [\"Alice\", \"Bob\", \"Carol\"], \"amounts\": [30, 50, 20], \"currency\": \"USD\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {library: string, programming_language: string, purpose: string, license: string, weekly_downloads_million: number}",
+    "input": "Create an entry for the React JavaScript library.",
+    "output": "{\"library\": \"React\", \"programming_language\": \"JavaScript\", \"purpose\": \"Frontend Development\", \"license\": \"MIT\", \"weekly_downloads_million\": 5.5}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the phase of the product lifecycle. Return JSON with key phase: introduction, growth, maturity, or decline.",
+    "input": "Sales have plateaued for three consecutive quarters and competitors are offering lower prices.",
+    "output": "{\"phase\": \"maturity\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{company: Acme, employees: 500, founded: 1990,}",
+    "output": "{\"company\": \"Acme\", \"employees\": 500, \"founded\": 1990}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function update_inventory with parameters: product_id (string), quantity_change (number), reason (string), warehouse_id (string).",
+    "input": "Add 200 units to product P-500 in warehouse W-3 due to new stock arrival.",
+    "output": "{\"function\": \"update_inventory\", \"params\": {\"product_id\": \"P-500\", \"quantity_change\": 200, \"reason\": \"new stock arrival\", \"warehouse_id\": \"W-3\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"diet\": {type: keto, calories: 1800, protein: 150g, carbs: 20g, fat: 130g}}",
+    "output": "{\"diet\": {\"type\": \"keto\", \"calories\": 1800, \"protein\": \"150g\", \"carbs\": \"20g\", \"fat\": \"130g\"}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {project: string, deadline: string, team_size: number, budget_usd: number, completed: boolean}",
+    "input": "Create a project entry for a website redesign with a team of 5.",
+    "output": "{\"project\": \"Website Redesign\", \"deadline\": \"2024-12-31\", \"team_size\": 5, \"budget_usd\": 10000.0, \"completed\": false}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function revoke_access with parameters: user_id (string), resource_type (string), resource_id (string), reason (string).",
+    "input": "Revoke user U-77 access to project PR-10 due to contract termination.",
+    "output": "{\"function\": \"revoke_access\", \"params\": {\"user_id\": \"U-77\", \"resource_type\": \"project\", \"resource_id\": \"PR-10\", \"reason\": \"contract termination\"}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {recipe_name: string, ingredients: array of strings, prep_time_minutes: number, difficulty: string}",
+    "input": "Create an entry for a simple pasta recipe.",
+    "output": "{\"recipe_name\": \"Simple Pasta\", \"ingredients\": [\"pasta\", \"tomato sauce\", \"parmesan cheese\"], \"prep_time_minutes\": 20, \"difficulty\": \"easy\"}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Generate a JSON tool call for function generate_password with parameters: length (number), include_symbols (boolean), include_numbers (boolean), exclude_ambiguous (boolean).",
+    "input": "Generate a 16-character password with symbols and numbers but without ambiguous characters.",
+    "output": "{\"function\": \"generate_password\", \"params\": {\"length\": 16, \"include_symbols\": true, \"include_numbers\": true, \"exclude_ambiguous\": true}}",
+    "task_type": "tool_call"
+  },
+  {
+    "instruction": "Extract the energy source, country, and percentage of national grid and return as JSON.",
+    "input": "Solar energy accounts for 12% of Germany's national electricity grid.",
+    "output": "{\"energy_source\": \"Solar energy\", \"country\": \"Germany\", \"percentage_of_national_grid\": 12}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'status': 'active', 'count': 42, 'tags': ['a', 'b']}",
+    "output": "{\"status\": \"active\", \"count\": 42, \"tags\": [\"a\", \"b\"]}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the university name, location, and founding year and return as JSON.",
+    "input": "MIT, located in Cambridge Massachusetts, was founded in 1861.",
+    "output": "{\"university\": \"MIT\", \"location\": \"Cambridge, Massachusetts\", \"foundingYear\": 1861}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{'contact': {'name': 'Dr. Kim', 'phone': '555-0101', 'email': 'kim@clinic.com', 'available': True}}",
+    "output": "{\"contact\": {\"name\": \"Dr. Kim\", \"phone\": \"555-0101\", \"email\": \"kim@clinic.com\", \"available\": true}}",
+    "task_type": "json_repair"
+  },
+  {
+    "instruction": "Extract the charity name, cause, and annual budget and return as JSON.",
+    "input": "Doctors Without Borders focuses on humanitarian medical aid with an annual budget of $2.1 billion.",
+    "output": "{\"charityName\": \"Doctors Without Borders\", \"cause\": \"humanitarian medical aid\", \"annualBudget\": 2.1e9}",
+    "task_type": "json_extraction"
+  },
+  {
+    "instruction": "Classify the migration type. Return JSON with key migration_type: economic, political, environmental, or family.",
+    "input": "Hundreds of families fled the coastal town after the rising sea levels destroyed their homes.",
+    "output": "{\"migration_type\": \"environmental\"}",
+    "task_type": "classification"
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {school: string, level: string, city: string, students: number, public: boolean}",
+    "input": "Create an entry for a large public high school in Texas.",
+    "output": "{\"school\": \"Springfield High School\", \"level\": \"High School\", \"city\": \"Houston\", \"students\": 2500, \"public\": true}",
+    "task_type": "schema_constrained"
+  },
+  {
+    "instruction": "Classify the age group of the speaker. Return JSON with key age_group: child, teenager, adult, or senior.",
+    "input": "Back in my day we walked five miles to school in the snow and we were grateful for it!",
+    "output": "{\"age_group\": \"senior\"}",
+    "task_type": "classification"
+  }
+]

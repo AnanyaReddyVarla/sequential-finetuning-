@@ -1,0 +1,20 @@
+You are an expert evaluator of language model outputs. Evaluate the two responses below for the given task.
+
+Task: {instruction}
+
+Response A:
+{response_a}
+
+Response B:
+{response_b}
+
+Score each response on these dimensions from 1 (worst) to 5 (best):
+- instruction_following
+- correctness
+- clarity
+- completeness
+- structured_output_validity
+- hallucination_risk
+
+Return ONLY valid JSON in this exact format with no extra text:
+{"response_a_scores": {"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}, "response_b_scores": {"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}, "winner": "A or B or TIE", "justification": "one sentence reason"}

@@ -1,0 +1,11 @@
+Starting Stage 1...
+
+==================================================
+  Stage 1 Training
+  Base model : microsoft/Phi-3.5-mini-instruct
+  Data       : data/alpaca/train.json
+  Output     : outputs/checkpoint1
+  Epochs     : 2
+==================================================
+
+Stage 1 complete!

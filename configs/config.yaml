@@ -1,0 +1,43 @@
+student_model: "microsoft/Phi-3.5-mini-instruct"
+
+teacher_api:
+  api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
+  base_url: "http://10.246.100.230/v1"
+  model: "llama-3.3-70b-instruct-awq"
+
+judge_api:
+  api_key: "gpustack_50e00c9281422bc5_0c0696dfcb1696d7635e58a2e56d6282"
+  base_url: "http://10.246.100.230/v1"
+  model: "llama-3.3-70b-instruct-awq"
+
+fallback_api:
+  api_key: "utsa-08GdYYyq2lzmWc02fhfMSKzv3ACPwYgq6U02BozaaupZym1wGQzJBNC59dV4wFTi"
+  base_url: "http://149.165.171.140:8888/v1"
+  model: "Qwen/Qwen3-8B"
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: ["o_proj", "qkv_proj"]
+
+training:
+  precision: "4bit"
+  stage1_epochs: 1
+  stage2_epochs: 1
+  learning_rate: 0.00002
+  batch_size: 4
+  gradient_accumulation_steps: 4
+  max_seq_length: 1024
+
+data:
+  alpaca_train: "data/alpaca/train_small.json"
+  alpaca_eval: "data/alpaca/eval.json"
+  json_train: "data/json_instruct/train.json"
+  json_eval: "data/json_instruct/eval.json"
+  eval_size: 100
+
+outputs:
+  checkpoint1: "outputs/checkpoint1"
+  checkpoint2: "outputs/checkpoint2"
+  logs: "logs/"
