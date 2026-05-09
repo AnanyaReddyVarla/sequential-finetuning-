@@ -1,20 +1,20 @@
 {
   "checkpoint_0": {
     "alpaca": {
-      "rouge1": 0.002,
+      "rouge1": 0.0,
       "rouge2": 0.0,
-      "rougeL": 0.002,
-      "bertscore_f1": 0.712
+      "rougeL": 0.0,
+      "bertscore_f1": 0.711
     },
     "json": {
       "rouge1": 0.0,
       "rouge2": 0.0,
       "rougeL": 0.0,
-      "bertscore_f1": 0.696,
+      "bertscore_f1": 0.689,
       "json_validity": 0.0,
       "schema_compliance": 0.0,
       "exact_match": 0.0,
-      "total": 20
+      "total": 100
     }
   },
   "checkpoint_1": {
@@ -22,17 +22,17 @@
       "rouge1": 0.0,
       "rouge2": 0.0,
       "rougeL": 0.0,
-      "bertscore_f1": 0.722
+      "bertscore_f1": 0.711
     },
     "json": {
       "rouge1": 0.0,
       "rouge2": 0.0,
       "rougeL": 0.0,
-      "bertscore_f1": 0.699,
+      "bertscore_f1": 0.688,
       "json_validity": 0.0,
       "schema_compliance": 0.0,
       "exact_match": 0.0,
-      "total": 20
+      "total": 100
     }
   },
   "checkpoint_2": {
@@ -40,17 +40,17 @@
       "rouge1": 0.0,
       "rouge2": 0.0,
       "rougeL": 0.0,
-      "bertscore_f1": 0.726
+      "bertscore_f1": 0.728
     },
     "json": {
       "rouge1": 0.0,
       "rouge2": 0.0,
       "rougeL": 0.0,
-      "bertscore_f1": 0.7,
+      "bertscore_f1": 0.73,
       "json_validity": 0.0,
       "schema_compliance": 0.0,
       "exact_match": 0.0,
-      "total": 20
+      "total": 100
     }
   }
 }

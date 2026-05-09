@@ -54,7 +54,7 @@ def run_checkpoint(checkpoint_id, cfg):
         with open(data_file) as f:
             examples = json.load(f)
         # Use only 20 examples to keep it fast on CPU
-        examples = examples[:20]
+        examples = examples[:100]
         results = []
         for ex in tqdm(examples, desc=f"  {eval_type}"):
             response = generate_response(
