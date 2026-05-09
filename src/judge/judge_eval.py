@@ -4,11 +4,27 @@ sys.path.append(".")
 from src.utils.api_client import call_model
 
 def call_judge(instruction, response_a, response_b):
-    prompt = open("prompts/judge_prompt.txt").read().format(
-        instruction=instruction,
-        response_a=response_a,
-        response_b=response_b
-    )
+    prompt = f"""You are an expert evaluator of language model outputs.
+
+Task: {instruction}
+
+Response A:
+{response_a}
+
+Response B:
+{response_b}
+
+Score each response on these dimensions from 1 (worst) to 5 (best):
+- instruction_following
+- correctness
+- clarity
+- completeness
+- structured_output_validity
+- hallucination_risk
+
+Return ONLY valid JSON with no extra text in this exact format:
+{{"response_a_scores": {{"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}}, "response_b_scores": {{"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}}, "winner": "A or B or TIE", "justification": "one sentence reason"}}"""
+
     raw = call_model(prompt, role="judge", max_tokens=512, temperature=0.0)
     try:
         return json.loads(raw)

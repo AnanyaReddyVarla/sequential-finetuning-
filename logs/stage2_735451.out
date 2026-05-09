@@ -1,0 +1,17 @@
+Starting Stage 2...
+
+==================================================
+  Stage 2 Training
+  Base model : outputs/checkpoint1
+  Data       : data/json_instruct/train.json
+  Output     : outputs/checkpoint2
+  Epochs     : 1
+==================================================
+
+Training on 378 examples...
+{'loss': '11.69', 'grad_norm': '2.312', 'learning_rate': '1.25e-05', 'entropy': '9.223', 'num_tokens': '1.618e+04', 'mean_token_accuracy': '0', 'epoch': '0.4211'}
+{'loss': '11.52', 'grad_norm': '2.516', 'learning_rate': '4.167e-06', 'entropy': '9.312', 'num_tokens': '3.237e+04', 'mean_token_accuracy': '0', 'epoch': '0.8421'}
+{'train_runtime': '147.3', 'train_samples_per_second': '2.565', 'train_steps_per_second': '0.163', 'train_loss': '11.58', 'entropy': '9.328', 'num_tokens': '3.798e+04', 'mean_token_accuracy': '0', 'epoch': '1'}
+
+Stage 2 complete. Saved to outputs/checkpoint2
+Stage 2 complete!

@@ -1,5 +1,5 @@
 import json, yaml, os, sys
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import PeftModel
 import torch
 from tqdm import tqdm
@@ -11,27 +11,36 @@ def load_config():
 
 def load_model(checkpoint_id, cfg):
     base = cfg["student_model"]
-    bnb = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16)
     tokenizer = AutoTokenizer.from_pretrained(base, trust_remote_code=True)
     tokenizer.pad_token = tokenizer.eos_token
+
     model = AutoModelForCausalLM.from_pretrained(
-        base, quantization_config=bnb, device_map="auto", trust_remote_code=True
+        base,
+        torch_dtype=torch.float32,
+        device_map="cpu",
+        trust_remote_code=True
     )
     if checkpoint_id == 1:
         model = PeftModel.from_pretrained(model, cfg["outputs"]["checkpoint1"])
+        model = model.merge_and_unload()
     elif checkpoint_id == 2:
         model = PeftModel.from_pretrained(model, cfg["outputs"]["checkpoint2"])
+        model = model.merge_and_unload()
     model.eval()
     return model, tokenizer
 
-def generate_response(model, tokenizer, instruction, input_text="", max_new=256):
+def generate_response(model, tokenizer, instruction, input_text="", max_new=128):
     inp = f"\n### Input:\n{input_text}" if input_text else ""
     prompt = f"### Instruction:\n{instruction}{inp}\n### Response:\n"
-    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=512)
     with torch.no_grad():
         out = model.generate(
-            **inputs, max_new_tokens=max_new,
-            do_sample=False, pad_token_id=tokenizer.eos_token_id
+            **inputs,
+            max_new_tokens=max_new,
+            do_sample=False,
+            use_cache=False,
+            pad_token_id=tokenizer.eos_token_id,
+            eos_token_id=tokenizer.eos_token_id
         )
     return tokenizer.decode(out[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
 
@@ -44,9 +53,14 @@ def run_checkpoint(checkpoint_id, cfg):
         os.makedirs(os.path.dirname(out_file), exist_ok=True)
         with open(data_file) as f:
             examples = json.load(f)
+        # Use only 20 examples to keep it fast on CPU
+        examples = examples[:20]
         results = []
         for ex in tqdm(examples, desc=f"  {eval_type}"):
-            response = generate_response(model, tokenizer, ex["instruction"], ex.get("input", ""))
+            response = generate_response(
+                model, tokenizer,
+                ex["instruction"], ex.get("input", "")
+            )
             results.append({
                 "instruction": ex["instruction"],
                 "input": ex.get("input", ""),

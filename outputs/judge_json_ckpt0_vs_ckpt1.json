@@ -1,0 +1,553 @@
+{
+  "summary": {
+    "checkpoint_a": 0,
+    "checkpoint_b": 1,
+    "eval_type": "json",
+    "win_rate_a": 0.0,
+    "win_rate_b": 0.0,
+    "tie_rate": 1.0,
+    "total": 20
+  },
+  "results": [
+    {
+      "instruction": "Generate a JSON tool call for function export_data with parameters: table_name (string), format (string), filters (object), destination (string).",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "\u30bd\u30bd\u30bd\u30bd\u30bd\u01d4\u30bd\u01d4\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are invalid and do not follow the instructions, providing nonsensical text instead of a JSON tool call."
+      }
+    },
+    {
+      "instruction": "Classify the type of bias. Return JSON with key bias: confirmation, selection, recency, or anchoring.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "estestestestestestestestestestestestestestest\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain repetitive, nonsensical text that fails to address the task, resulting in equally poor scores."
+      }
+    },
+    {
+      "instruction": "Fix the malformed JSON below and return valid JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "On On On On On On On On On On On On On On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On On On On On On\u01d4 On\u01d4 On On On On On On On On On On On On On On On On On On On\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant to the task of fixing malformed JSON and returning valid JSON."
+      }
+    },
+    {
+      "instruction": "Classify the product category. Return JSON with key category: electronics, clothing, food, furniture, or sports.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "estestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestestest\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to follow instructions or provide a valid product category."
+      }
+    },
+    {
+      "instruction": "Generate a JSON tool call for function allocate_budget with parameters: project_id (string), amount (number), currency (string), categories (object), approved_by (string).",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain nonsensical characters and do not provide a valid JSON tool call for the function allocate_budget."
+      }
+    },
+    {
+      "instruction": "Generate a JSON tool call for function deploy_model with parameters: model_id (string), environment (string), replicas (number), gpu_required (boolean).",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain nonsensical characters and do not provide a valid JSON tool call for the function deploy_model."
+      }
+    },
+    {
+      "instruction": "Generate a JSON object with schema: {algorithm: string, type: string, time_complexity: string, space_complexity: string, use_case: string}",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful content."
+      }
+    },
+    {
+      "instruction": "Generate a JSON tool call for function calculate_route with parameters: start (string), end (string), mode (string), avoid_tolls (boolean).",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "On On On On On On On On On On On On On On On On On On On\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u01d4\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are invalid and do not provide a JSON tool call for the function calculate_route."
+      }
+    },
+    {
+      "instruction": "Generate a JSON object with schema: {course_id: string, title: string, instructor: string, credits: number, online: boolean}",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful content."
+      }
+    },
+    {
+      "instruction": "Classify the music genre. Return JSON with key genre: pop, rock, jazz, classical, or hip_hop.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain only repetitive characters and do not provide any meaningful output or follow the instruction to classify the music genre."
+      }
+    },
+    {
+      "instruction": "Generate a JSON object with schema: {mineral: string, hardness: number, color: string, uses: array of strings, common_location: string}",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful content."
+      }
+    },
+    {
+      "instruction": "Generate a JSON tool call for function find_nearest with parameters: location (string), category (string), radius_km (number), open_now (boolean).",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u012a\u012a\u012a\u012a\u012a\u012a\u012a\u012a",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful output."
+      }
+    },
+    {
+      "instruction": "Classify the type of chemical reaction. Return JSON with key reaction: synthesis, decomposition, combustion, or neutralization.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to follow instructions or provide a valid chemical reaction classification."
+      }
+    },
+    {
+      "instruction": "Extract the meeting date, time, and location from the text and return as JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "estestest\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain only nonsensical characters and do not provide any relevant information to extract the meeting date, time, and location."
+      }
+    },
+    {
+      "instruction": "Generate a JSON object with schema: {treaty: string, signatories: array of strings, year_signed: number, purpose: string}",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful content."
+      }
+    },
+    {
+      "instruction": "Fix the malformed JSON below and return valid JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any attempt to fix the malformed JSON."
+      }
+    },
+    {
+      "instruction": "Extract the sports record, athlete, and year set and return as JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "estestestestestestestest\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain only nonsensical characters and do not provide any relevant information."
+      }
+    },
+    {
+      "instruction": "Fix the malformed JSON below and return valid JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On On\u30bdMonth\u30bdMonthMonthMonthMonth\u30bdMonth\u30bdMonth\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any coherent output."
+      }
+    },
+    {
+      "instruction": "Generate a JSON object with schema: {coffee: string, origin: string, roast_level: string, caffeine_mg: number, flavor_notes: array of strings}",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming coming\u30bd coming\u30bd coming\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant and lack any meaningful content."
+      }
+    },
+    {
+      "instruction": "Fix the malformed JSON below and return valid JSON.",
+      "checkpoint_a": 0,
+      "checkpoint_b": 1,
+      "response_a": "On On On On On\u01d4 On\u01d4 On On On On On On\u01d4 On\u01d4\u01d4\u01d4\u01d4\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4 On\u01d4\u01d4\u01d4\u01d4\u01d4 On\u01d4 On On On On On On On\u01d4 On\u01d4 On On On On On\u01d4 On\u01d4 On On On On On On On On\u01d4 On\u01d4\u01d4MonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonthMonth\u30bdMonth\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bdMonth\u30bdMonth\u30bdMonth\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd\u30bd",
+      "response_b": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are completely irrelevant to the task of fixing malformed JSON and returning valid JSON."
+      }
+    }
+  ]
+}

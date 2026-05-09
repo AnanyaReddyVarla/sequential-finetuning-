@@ -1,0 +1,142 @@
+[
+  {
+    "instruction": "Generate a JSON tool call for function export_data with parameters: table_name (string), format (string), filters (object), destination (string).",
+    "input": "Export the orders table as CSV filtered by status shipped to the reports folder.",
+    "expected_output": "{\"function\": \"export_data\", \"params\": {\"table_name\": \"orders\", \"format\": \"CSV\", \"filters\": {\"status\": \"shipped\"}, \"destination\": \"reports\"}}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Classify the type of bias. Return JSON with key bias: confirmation, selection, recency, or anchoring.",
+    "input": "The analyst only looked at data from the past month and concluded that sales were always this high.",
+    "expected_output": "{\"bias\": \"recency\"}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoThatassoThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThatThat lunThat lunThat lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{planet: Mars, moons: [Phobos, Deimos], habitable: false, explored: true}",
+    "expected_output": "{\"planet\": \"Mars\", \"moons\": [\"Phobos\", \"Deimos\"], \"habitable\": false, \"explored\": true}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lunasso lun lun lun lun lun lun Mon lun Mon Mon Mon Mon Mon Mon Mon lun Mon lun Mon lun Mon lun Mon lun Mon lun lun lun lun lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun Mon lun Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon Mon Mon Mon Mon Mon Mon",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Classify the product category. Return JSON with key category: electronics, clothing, food, furniture, or sports.",
+    "input": "A lightweight carbon fiber road bike with 21-speed Shimano gears.",
+    "expected_output": "{\"category\": \"sports\"}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunThatThatThatThatThatThat lunThat lunThat lunThatThatThatThatThatThatThatThatThat lunThat lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON tool call for function allocate_budget with parameters: project_id (string), amount (number), currency (string), categories (object), approved_by (string).",
+    "input": "Allocate $50000 to project P-99 split as 60% development and 40% marketing approved by CFO Sarah.",
+    "expected_output": "{\"function\": \"allocate_budget\", \"params\": {\"project_id\": \"P-99\", \"amount\": 50000, \"currency\": \"USD\", \"categories\": {\"development\": 0.6, \"marketing\": 0.4}, \"approved_by\": \"CFO Sarah\"}}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON tool call for function deploy_model with parameters: model_id (string), environment (string), replicas (number), gpu_required (boolean).",
+    "input": "Deploy model M-42 to production with 3 replicas and GPU support enabled.",
+    "expected_output": "{\"function\": \"deploy_model\", \"params\": {\"model_id\": \"M-42\", \"environment\": \"production\", \"replicas\": 3, \"gpu_required\": true}}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {algorithm: string, type: string, time_complexity: string, space_complexity: string, use_case: string}",
+    "input": "Create an entry for the Quick Sort algorithm.",
+    "expected_output": "{\"algorithm\": \"Quick Sort\", \"type\": \"Sorting\", \"time_complexity\": \"O(n log n)\", \"space_complexity\": \"O(log n)\", \"use_case\": \"Sorting large datasets efficiently\"}",
+    "model_output": "Monasso Monasso Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon Mon Mon lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON tool call for function calculate_route with parameters: start (string), end (string), mode (string), avoid_tolls (boolean).",
+    "input": "Get driving directions from San Antonio to Houston avoiding tolls.",
+    "expected_output": "{\"function\": \"calculate_route\", \"params\": {\"start\": \"San Antonio\", \"end\": \"Houston\", \"mode\": \"driving\", \"avoid_tolls\": true}}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {course_id: string, title: string, instructor: string, credits: number, online: boolean}",
+    "input": "Create an entry for an online machine learning course worth 3 credits.",
+    "expected_output": "{\"course_id\": \"ML101\", \"title\": \"Introduction to Machine Learning\", \"instructor\": \"Dr. Rachel Kim\", \"credits\": 3, \"online\": true}",
+    "model_output": "Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun Mon lun lun lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Classify the music genre. Return JSON with key genre: pop, rock, jazz, classical, or hip_hop.",
+    "input": "Smooth saxophone solos over a walking bass line and brushed snare drums.",
+    "expected_output": "{\"genre\": \"jazz\"}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunternal Monternal Monternal lunternalternalternalternalternalternalternalternal lunternal lunternal lunternal lunternal lunternal lunternal lunternal lunternal Monternal Monternal Monternal Monternal Monternal lunternal lunternal lunternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternal",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {mineral: string, hardness: number, color: string, uses: array of strings, common_location: string}",
+    "input": "Create an entry for Quartz.",
+    "expected_output": "{\"mineral\": \"Quartz\", \"hardness\": 7, \"color\": \"Colorless\", \"uses\": [\"Electronics\", \"Optics\", \"Construction\"], \"common_location\": \"Rocky outcrops worldwide\"}",
+    "model_output": "assoassoassoassoassoasso Monasso Monasso Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun lun lun lun Mon lun Mon lun Mon lun Mon lun lun Mon lun lun lun lun lun lun lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON tool call for function find_nearest with parameters: location (string), category (string), radius_km (number), open_now (boolean).",
+    "input": "Find the nearest open pharmacy within 2km of my current location in Austin.",
+    "expected_output": "{\"function\": \"find_nearest\", \"params\": {\"location\": \"Austin\", \"category\": \"pharmacy\", \"radius_km\": 2, \"open_now\": true}}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Classify the type of chemical reaction. Return JSON with key reaction: synthesis, decomposition, combustion, or neutralization.",
+    "input": "An acid and a base react to produce water and a salt compound.",
+    "expected_output": "{\"reaction\": \"neutralization\"}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Extract the meeting date, time, and location from the text and return as JSON.",
+    "input": "The team meeting is scheduled for Monday March 10 at 3:00 PM in Conference Room B.",
+    "expected_output": "{\"meetingDate\": \"Monday March 10\", \"meetingTime\": \"3:00 PM\", \"meetingLocation\": \"Conference Room B\"}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun Mon lun lun lun lun lun Mon lun Mon lun Mon lun Mon lun lun Mon lun lun lun lun lun Mon lun Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun Mon lun Mon lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {treaty: string, signatories: array of strings, year_signed: number, purpose: string}",
+    "input": "Create an entry for a major international peace treaty.",
+    "expected_output": "{\"treaty\": \"Treaty of Versailles\", \"signatories\": [\"Germany\", \"Austria\", \"Bulgaria\", \"Hungary\", \"Ottoman Empire\", \"United States\", \"United Kingdom\", \"France\", \"Italy\", \"Japan\"], \"year_signed\": 1919, \"purpose\": \"To establish the terms of the armistice and peace following World War I\"}",
+    "model_output": "Monasso Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"subscription\": {plan: pro, price: $9.99, billing: monthly, active: TRUE}}",
+    "expected_output": "{\"subscription\": {\"plan\": \"pro\", \"price\": \"$9.99\", \"billing\": \"monthly\", \"active\": true}}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lun Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun Mon Mon Mon Mon Mon lun Mon lunternal Mon lunternal Monternal Monternal Monternal Mon lunternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternal",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Extract the sports record, athlete, and year set and return as JSON.",
+    "input": "Usain Bolt set the 100m world record of 9.58 seconds in 2009.",
+    "expected_output": "{\"sportsRecord\": {\"event\": \"100m\", \"time\": \"9.58 seconds\"}, \"athlete\": \"Usain Bolt\", \"year\": 2009}",
+    "model_output": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{config: {debug: True, max_retries: 3, timeout: null, tags: [prod, v2]}}",
+    "expected_output": "{\"config\": {\"debug\": true, \"max_retries\": 3, \"timeout\": null, \"tags\": [\"prod\", \"v2\"]}}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun Mon lun Mon lun Mon lun lun lun lun Mon lun Mon lun Mon lun lun lun lun lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun Mon lun Mon lun Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternal Monternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternalternal",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Generate a JSON object with schema: {coffee: string, origin: string, roast_level: string, caffeine_mg: number, flavor_notes: array of strings}",
+    "input": "Create an entry for Ethiopian Yirgacheffe coffee.",
+    "expected_output": "{\"coffee\": \"Ethiopian Yirgacheffe\", \"origin\": \"Ethiopia\", \"roast_level\": \"Light\", \"caffeine_mg\": 200, \"flavor_notes\": [\"Floral\", \"Citrus\", \"Honey\"]}",
+    "model_output": "Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun Mon lun lun Mon lun Mon lun Mon lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+    "checkpoint": 2
+  },
+  {
+    "instruction": "Fix the malformed JSON below and return valid JSON.",
+    "input": "{\"menu\": {\"items\": [\"pizza\", \"burger\", \"salad\",], \"count\": 3,}}",
+    "expected_output": "{\"menu\": {\"items\": [\"pizza\", \"burger\", \"salad\"], \"count\": 3}}",
+    "model_output": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun Mon lun Mon lun Mon lun Mon lun Mon lun Mon Mon lun Mon lun Mon lun Mon lun Mon lun Mon lun Mon lun Mon lun Mon lun lun Mon lun Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon Mon",
+    "checkpoint": 2
+  }
+]

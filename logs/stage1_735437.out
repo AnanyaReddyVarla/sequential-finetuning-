@@ -9,3 +9,19 @@ Starting Stage 1...
 ==================================================
 
 Training on 2000 examples...
+{'loss': '11.47', 'grad_norm': '4.344', 'learning_rate': '1.856e-05', 'entropy': '9.238', 'num_tokens': '3.342e+04', 'mean_token_accuracy': '0', 'epoch': '0.08'}
+{'loss': '11.14', 'grad_norm': '2.078', 'learning_rate': '1.696e-05', 'entropy': '9.507', 'num_tokens': '6.135e+04', 'mean_token_accuracy': '5.01e-05', 'epoch': '0.16'}
+{'loss': '10.85', 'grad_norm': '1.68', 'learning_rate': '1.536e-05', 'entropy': '9.737', 'num_tokens': '9.5e+04', 'mean_token_accuracy': '1.827e-05', 'epoch': '0.24'}
+{'loss': '10.66', 'grad_norm': '1.266', 'learning_rate': '1.376e-05', 'entropy': '9.837', 'num_tokens': '1.28e+05', 'mean_token_accuracy': '4.144e-05', 'epoch': '0.32'}
+{'loss': '10.54', 'grad_norm': '1.203', 'learning_rate': '1.216e-05', 'entropy': '9.892', 'num_tokens': '1.601e+05', 'mean_token_accuracy': '0.0005677', 'epoch': '0.4'}
+{'loss': '10.38', 'grad_norm': '1.164', 'learning_rate': '1.056e-05', 'entropy': '9.913', 'num_tokens': '1.912e+05', 'mean_token_accuracy': '0.002869', 'epoch': '0.48'}
+{'loss': '10.27', 'grad_norm': '1.367', 'learning_rate': '8.96e-06', 'entropy': '9.907', 'num_tokens': '2.255e+05', 'mean_token_accuracy': '0.009651', 'epoch': '0.56'}
+{'loss': '10.15', 'grad_norm': '3.922', 'learning_rate': '7.36e-06', 'entropy': '9.892', 'num_tokens': '2.576e+05', 'mean_token_accuracy': '0.02339', 'epoch': '0.64'}
+{'loss': '10.04', 'grad_norm': '1.531', 'learning_rate': '5.76e-06', 'entropy': '9.871', 'num_tokens': '2.873e+05', 'mean_token_accuracy': '0.03262', 'epoch': '0.72'}
+{'loss': '9.951', 'grad_norm': '1.664', 'learning_rate': '4.16e-06', 'entropy': '9.841', 'num_tokens': '3.192e+05', 'mean_token_accuracy': '0.04075', 'epoch': '0.8'}
+{'loss': '9.88', 'grad_norm': '1.508', 'learning_rate': '2.56e-06', 'entropy': '9.808', 'num_tokens': '3.508e+05', 'mean_token_accuracy': '0.04188', 'epoch': '0.88'}
+{'loss': '9.834', 'grad_norm': '1.93', 'learning_rate': '9.6e-07', 'entropy': '9.783', 'num_tokens': '3.841e+05', 'mean_token_accuracy': '0.04349', 'epoch': '0.96'}
+{'train_runtime': '1867', 'train_samples_per_second': '1.071', 'train_steps_per_second': '0.067', 'train_loss': '10.41', 'entropy': '9.773', 'num_tokens': '3.991e+05', 'mean_token_accuracy': '0.04555', 'epoch': '1'}
+
+Stage 1 complete. Saved to outputs/checkpoint1
+Stage 1 complete!

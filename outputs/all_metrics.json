@@ -1,0 +1,56 @@
+{
+  "checkpoint_0": {
+    "alpaca": {
+      "rouge1": 0.002,
+      "rouge2": 0.0,
+      "rougeL": 0.002,
+      "bertscore_f1": 0.712
+    },
+    "json": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bertscore_f1": 0.696,
+      "json_validity": 0.0,
+      "schema_compliance": 0.0,
+      "exact_match": 0.0,
+      "total": 20
+    }
+  },
+  "checkpoint_1": {
+    "alpaca": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bertscore_f1": 0.722
+    },
+    "json": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bertscore_f1": 0.699,
+      "json_validity": 0.0,
+      "schema_compliance": 0.0,
+      "exact_match": 0.0,
+      "total": 20
+    }
+  },
+  "checkpoint_2": {
+    "alpaca": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bertscore_f1": 0.726
+    },
+    "json": {
+      "rouge1": 0.0,
+      "rouge2": 0.0,
+      "rougeL": 0.0,
+      "bertscore_f1": 0.7,
+      "json_validity": 0.0,
+      "schema_compliance": 0.0,
+      "exact_match": 0.0,
+      "total": 20
+    }
+  }
+}

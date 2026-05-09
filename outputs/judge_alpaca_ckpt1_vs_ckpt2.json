@@ -1,0 +1,553 @@
+{
+  "summary": {
+    "checkpoint_a": 1,
+    "checkpoint_b": 2,
+    "eval_type": "alpaca",
+    "win_rate_a": 0.0,
+    "win_rate_b": 0.0,
+    "tie_rate": 1.0,
+    "total": 20
+  },
+  "results": [
+    {
+      "instruction": "Describe a traditional wedding ceremony you attended",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoassoassoassoassoassoasso\u7248\u7248\u7248\u7248\u7248\u7248\u7248assoassoassoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful content related to a traditional wedding ceremony."
+      }
+    },
+    {
+      "instruction": "What do you understand by AI explainability?",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248 lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful explanation of AI explainability."
+      }
+    },
+    {
+      "instruction": "Generate a dialogue between a customer and a salesperson in a department store.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoasso\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248asso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful content, making them equally invalid."
+      }
+    },
+    {
+      "instruction": "Provide a topic for the following passage",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "winner": "TIE",
+        "justification": "Both responses are invalid and consist of repetitive, nonsensical text, failing to provide a coherent topic."
+      }
+    },
+    {
+      "instruction": "Summarize the story as a one sentence statement",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and fail to provide a meaningful summary."
+      }
+    },
+    {
+      "instruction": "Compare and contrast democratic and autocratic forms of government",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdru birdrururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248 lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful content related to the comparison of democratic and autocratic forms of government."
+      }
+    },
+    {
+      "instruction": "Rearrange the words in this sentence to form a more sophisticated sentence structure.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird birdru birdrururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and fail to follow instructions."
+      }
+    },
+    {
+      "instruction": "Come up with a product idea to solve a problem.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248assoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack meaningful content, making them equally unhelpful in solving the problem."
+      }
+    },
+    {
+      "instruction": "Compare and contrast two approaches to solve the following problem",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrururururururururururururururururururururururururururururu",
+      "response_b": "lun\u7248 lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack meaningful content, making them equally poor."
+      }
+    },
+    {
+      "instruction": "Calculate the age difference between the given two people.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to address the task of calculating the age difference between two people."
+      }
+    },
+    {
+      "instruction": "What are the benefits of using blockchain technology in the finance industry?",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful content related to the question about blockchain technology in the finance industry."
+      }
+    },
+    {
+      "instruction": "Name two disadvantages of using a cloud-based data system.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoassoasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lunternal lunternal lunternal",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack meaningful content, making them equally invalid."
+      }
+    },
+    {
+      "instruction": "Rewrite the sentence and fix the grammar",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248asso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any meaningful content, making them equally invalid."
+      }
+    },
+    {
+      "instruction": "Summarize this measure into 3 points.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to address the task, resulting in identical poor scores."
+      }
+    },
+    {
+      "instruction": "Write a function to find the longest word in a sentence.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "asso\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248 lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to provide a valid solution to the problem."
+      }
+    },
+    {
+      "instruction": "Generate a question that this sentence can answer.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoassoassoassoassoasso lunasso lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and fail to provide a valid question."
+      }
+    },
+    {
+      "instruction": "How many calories does this recipe contain?",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "rurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 1
+        },
+        "winner": "TIE",
+        "justification": "Both responses contain only nonsensical repetitions of characters, failing to address the question or provide any relevant information."
+      }
+    },
+    {
+      "instruction": "Describe the textile industry",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdru birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "assoassoassoassoassoassoassoassoassoassoassoasso\u7248\u7248\u7248asso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and lack any relevant information about the textile industry."
+      }
+    },
+    {
+      "instruction": "Suggest a strategy for a company to create an effective social media presence.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird bird birdru birdru birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248 lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are nonsensical and fail to address the task, resulting in a tie."
+      }
+    },
+    {
+      "instruction": "Create a product design document for a sunrise alarm clock.",
+      "checkpoint_a": 1,
+      "checkpoint_b": 2,
+      "response_a": "bird bird bird birdrurururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururururu",
+      "response_b": "\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248\u7248 lunasso lunasso lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun lun",
+      "judgment": {
+        "response_a_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "response_b_scores": {
+          "instruction_following": 1,
+          "correctness": 1,
+          "clarity": 1,
+          "completeness": 1,
+          "structured_output_validity": 1,
+          "hallucination_risk": 5
+        },
+        "winner": "TIE",
+        "justification": "Both responses are incoherent and fail to provide a product design document for a sunrise alarm clock."
+      }
+    }
+  ]
+}

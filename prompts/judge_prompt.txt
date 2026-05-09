@@ -16,5 +16,9 @@ Score each response on these dimensions from 1 (worst) to 5 (best):
 - structured_output_validity
 - hallucination_risk
 
-Return ONLY valid JSON in this exact format with no extra text:
-{"response_a_scores": {"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}, "response_b_scores": {"instruction_following": N, "correctness": N, "clarity": N, "completeness": N, "structured_output_validity": N, "hallucination_risk": N}, "winner": "A or B or TIE", "justification": "one sentence reason"}
+Return ONLY valid JSON with no extra text. Use this exact structure:
+Winner should be exactly "A", "B", or "TIE".
+Justification should be one sentence.
+
+Example output:
+{"response_a_scores": {"instruction_following": 4, "correctness": 4, "clarity": 4, "completeness": 4, "structured_output_validity": 3, "hallucination_risk": 4}, "response_b_scores": {"instruction_following": 3, "correctness": 3, "clarity": 3, "completeness": 3, "structured_output_validity": 4, "hallucination_risk": 4}, "winner": "A", "justification": "Response A followed instructions more naturally."}
