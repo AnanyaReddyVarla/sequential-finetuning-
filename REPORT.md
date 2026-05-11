@@ -1,8 +1,4 @@
 # Assignment 3: Sequential Instruction Tuning of a Small LLM
-**Course:** LLM & Agentic Systems — UTSA
-**Author:** Aashlesha Challa
-
----
 
 ## 1. Methodology
 
